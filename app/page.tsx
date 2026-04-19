@@ -23,6 +23,7 @@ export default function HomePage() {
       </nav>
 
       <section className="hero" id="home">
+        <div className="hero-bg" aria-hidden="true" />
         <div className="hero-grid">
           <div>
             <div className="hero-eyebrow">
@@ -297,7 +298,6 @@ export default function HomePage() {
           <a href="https://github.com/agent-cockpit/agent-cockpit/issues" target="_blank" rel="noopener">Issues</a>
           <a href="https://github.com/agent-cockpit/agent-cockpit/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contributing</a>
         </div>
-        <div className="footer-right">Built with Claude 🤖</div>
       </footer>
     </>
   );
