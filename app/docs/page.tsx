@@ -90,11 +90,16 @@ export default function DocsPage() {
             <h2 className="doc-h2">Prerequisites</h2>
             <p className="doc-p">Before you start:</p>
             <ul className="doc-ul">
-              <li><strong>Node 20+</strong> — <code>node --version</code> should print v20 or above</li>
+              <li><strong>Node 22+</strong> — <code>node --version</code> should print v22 or above</li>
               <li><strong>pnpm 8+</strong> — install via <code>npm install -g pnpm</code></li>
-              <li><strong>Claude Code CLI</strong> — installed and authenticated (<code>claude --version</code>)</li>
-              <li>Or: <strong>Codex CLI</strong> — installed and authenticated (<code>codex --version</code>)</li>
+              <li><strong>Claude Code CLI</strong> — installed and authenticated (see below)</li>
+              <li>Or: <strong>Codex CLI</strong> — installed and authenticated (see below)</li>
             </ul>
+            <h3 className="doc-h3">Install Claude Code</h3>
+            <div className="code-block"><span className="cb-lang">MAC / LINUX</span><span className="c"># Shell installer</span>{"\n"}<span className="p">$</span> curl -fsSL https://claude.ai/install.sh | bash{"\n\n"}<span className="c"># Authenticate</span>{"\n"}<span className="p">$</span> claude auth login</div>
+            <div className="code-block"><span className="cb-lang">WINDOWS</span><span className="c"># PowerShell installer</span>{"\n"}{">"} irm https://claude.ai/install.ps1 | iex{"\n\n"}<span className="c"># Authenticate</span>{"\n"}{">"} claude auth login</div>
+            <h3 className="doc-h3">Install Codex <span style={{ fontWeight: 400, fontSize: 11, color: "var(--fg-3)", textTransform: "none", letterSpacing: 0 }}>optional</span></h3>
+            <div className="code-block"><span className="cb-lang">ALL OS</span><span className="p">$</span> npm install -g @openai/codex{"\n\n"}<span className="c"># Set your API key</span>{"\n"}<span className="p">$</span> export OPENAI_API_KEY=sk-...{" "}<span className="c"># Mac / Linux</span>{"\n"}{">"} {`$env:OPENAI_API_KEY = "sk-..."`}{" "}<span className="c"># Windows PowerShell</span>{"\n\n"}<span className="p">$</span> codex --version</div>
             <div className="callout note">
               <div className="callout-title">NOTE</div>
               Agent Cockpit does not manage your API keys. Claude Code and Codex must be authenticated in your shell environment before launching sessions.
@@ -102,12 +107,9 @@ export default function DocsPage() {
             <h2 className="doc-h2">Clone and install</h2>
             <div className="code-block"><span className="cb-lang">BASH</span><span className="c"># Clone the repository</span>{"\n"}<span className="p">$</span> git clone https://github.com/agent-cockpit/agent-cockpit.git{"\n"}<span className="p">$</span> cd agent-cockpit{"\n\n"}<span className="c"># Install all workspace dependencies</span>{"\n"}<span className="p">$</span> pnpm install</div>
             <h2 className="doc-h2">Start the development server</h2>
-            <div className="code-block"><span className="cb-lang">BASH</span><span className="p">$</span> pnpm dev</div>
-            <p className="doc-p">This starts two processes concurrently:</p>
-            <ul className="doc-ul">
-              <li><strong>Daemon</strong> — Node.js process on <code>http://localhost:3000</code> that manages agent sessions</li>
-              <li><strong>UI</strong> — Vite dev server on <code>http://localhost:5173</code></li>
-            </ul>
+            <p className="doc-p">You need two terminals — one for the daemon, one for the UI.</p>
+            <div className="code-block"><span className="cb-lang">TERMINAL 1 — DAEMON</span><span className="c"># Listens on port 3002 (Claude Code hooks) and 3001 (WebSocket)</span>{"\n"}<span className="p">$</span> pnpm --filter @cockpit/daemon dev</div>
+            <div className="code-block"><span className="cb-lang">TERMINAL 2 — UI</span><span className="c"># Vite dev server at http://localhost:5173</span>{"\n"}<span className="p">$</span> pnpm --filter @cockpit/ui dev</div>
             <p className="doc-p">Open <code>http://localhost:5173</code> in your browser. You&apos;ll land on the office map. No agents are running yet — hit <code>+ LAUNCH</code> in the top bar to create your first session.</p>
             <div className="callout tip">
               <div className="callout-title">TIP</div>
@@ -244,7 +246,8 @@ export default function DocsPage() {
             <h2 className="doc-h2"><span className="prov cl">CLAUDE</span> — Claude Code</h2>
             <p className="doc-p">Anthropic&apos;s Claude Code agent. Strong for large, context-heavy tasks: multi-file refactors, understanding legacy codebases, writing architecture docs alongside code, and anything where a long conversation thread helps.</p>
             <h3 className="doc-h3">Setup</h3>
-            <div className="code-block"><span className="cb-lang">BASH</span><span className="c"># Install Claude Code CLI</span>{"\n"}<span className="p">$</span> npm install -g @anthropic-ai/claude-code{"\n\n"}<span className="c"># Authenticate (opens browser)</span>{"\n"}<span className="p">$</span> claude auth login{"\n\n"}<span className="c"># Verify</span>{"\n"}<span className="p">$</span> claude --version</div>
+            <div className="code-block"><span className="cb-lang">MAC / LINUX</span><span className="c"># Shell installer</span>{"\n"}<span className="p">$</span> curl -fsSL https://claude.ai/install.sh | bash{"\n\n"}<span className="c"># Authenticate (opens browser)</span>{"\n"}<span className="p">$</span> claude auth login{"\n\n"}<span className="c"># Verify</span>{"\n"}<span className="p">$</span> claude --version</div>
+            <div className="code-block"><span className="cb-lang">WINDOWS</span><span className="c"># PowerShell installer</span>{"\n"}{">"} irm https://claude.ai/install.ps1 | iex{"\n\n"}<span className="c"># Authenticate (opens browser)</span>{"\n"}{">"} claude auth login{"\n\n"}<span className="c"># Verify</span>{"\n"}{">"} claude --version</div>
             <p className="doc-p">Claude Code sessions show an orange left-edge stripe <span style={{ display: "inline-block", width: 8, height: 14, background: "var(--claude)", verticalAlign: "middle", margin: "0 4px" }} /> in every chip and window.</p>
             <h2 className="doc-h2"><span className="prov cx">CODEX</span> — OpenAI Codex</h2>
             <p className="doc-p">OpenAI&apos;s Codex agent. Optimised for fast, surgical edits: targeted bug fixes, test generation, docstring writing, and cases where you want a quick patch without a long planning phase.</p>

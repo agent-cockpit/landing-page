@@ -1,0 +1,839 @@
+- generic [ref=e2]:
+  - region
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e9]:
+        - button "Toggle navigation" [ref=e11] [cursor=pointer]
+        - link "Homepage" [ref=e17] [cursor=pointer]:
+          - /url: /
+          - img [ref=e18]
+        - generic [ref=e20]:
+          - link "Sign in" [ref=e21] [cursor=pointer]:
+            - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fagent-cockpit%2Fagent-cockpit
+          - button "Appearance settings" [ref=e24] [cursor=pointer]:
+            - img
+  - main [ref=e28]:
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e32]:
+          - img [ref=e33]
+          - link "agent-cockpit" [ref=e36] [cursor=pointer]:
+            - /url: /agent-cockpit
+          - generic [ref=e37]: /
+          - strong [ref=e38]:
+            - link "agent-cockpit" [ref=e39] [cursor=pointer]:
+              - /url: /agent-cockpit/agent-cockpit
+          - generic [ref=e40]: Public
+        - generic [ref=e41]:
+          - list:
+            - listitem [ref=e42]:
+              - link "You must be signed in to change notification settings" [ref=e43] [cursor=pointer]:
+                - /url: /login?return_to=%2Fagent-cockpit%2Fagent-cockpit
+                - img [ref=e44]
+                - text: Notifications
+            - listitem [ref=e46]:
+              - link "Fork 0" [ref=e47] [cursor=pointer]:
+                - /url: /login?return_to=%2Fagent-cockpit%2Fagent-cockpit
+                - img [ref=e48]
+                - text: Fork
+                - generic "0" [ref=e50]
+            - listitem [ref=e51]:
+              - link "You must be signed in to star a repository" [ref=e53] [cursor=pointer]:
+                - /url: /login?return_to=%2Fagent-cockpit%2Fagent-cockpit
+                - img [ref=e54]
+                - text: Star
+                - generic "12 users starred this repository" [ref=e56]: "12"
+      - navigation "Repository" [ref=e57]:
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - link "Code" [ref=e60] [cursor=pointer]:
+              - /url: /agent-cockpit/agent-cockpit
+              - img [ref=e61]
+              - generic [ref=e63]: Code
+          - listitem [ref=e64]:
+            - link "Issues" [ref=e65] [cursor=pointer]:
+              - /url: /agent-cockpit/agent-cockpit/issues
+              - img [ref=e66]
+              - generic [ref=e69]: Issues
+          - listitem [ref=e70]:
+            - link "Pull requests" [ref=e71] [cursor=pointer]:
+              - /url: /agent-cockpit/agent-cockpit/pulls
+              - img [ref=e72]
+              - generic [ref=e74]: Pull requests
+          - listitem [ref=e75]:
+            - link "Discussions" [ref=e76] [cursor=pointer]:
+              - /url: /agent-cockpit/agent-cockpit/discussions
+              - img [ref=e77]
+              - generic [ref=e79]: Discussions
+          - listitem [ref=e80]:
+            - link "Actions" [ref=e81] [cursor=pointer]:
+              - /url: /agent-cockpit/agent-cockpit/actions
+              - img [ref=e82]
+              - generic [ref=e84]: Actions
+          - listitem [ref=e85]:
+            - link "Projects" [ref=e86] [cursor=pointer]:
+              - /url: /agent-cockpit/agent-cockpit/projects
+              - img [ref=e87]
+              - generic [ref=e89]: Projects
+          - listitem [ref=e90]
+          - listitem [ref=e91]
+        - button "Additional navigation options" [ref=e95] [cursor=pointer]:
+          - img
+    - generic [ref=e108]:
+      - heading "agent-cockpit/agent-cockpit" [level=1] [ref=e110]
+      - generic [ref=e111]:
+        - generic [ref=e114]:
+          - generic [ref=e115]:
+            - generic [ref=e116]:
+              - button "main branch" [ref=e118] [cursor=pointer]:
+                - generic [ref=e119]:
+                  - generic [ref=e121]:
+                    - img [ref=e123]
+                    - generic [ref=e126]: main
+                  - generic:
+                    - img
+              - generic [ref=e127]:
+                - link "Go to Branches page" [ref=e128] [cursor=pointer]:
+                  - /url: /agent-cockpit/agent-cockpit/branches
+                  - img [ref=e129]
+                - link "Go to Tags page" [ref=e131] [cursor=pointer]:
+                  - /url: /agent-cockpit/agent-cockpit/tags
+                  - img [ref=e132]
+            - generic [ref=e134]:
+              - button "Go to file" [ref=e137] [cursor=pointer]:
+                - generic [ref=e139]: Go to file
+              - button "Code" [ref=e140] [cursor=pointer]:
+                - generic [ref=e141]:
+                  - generic:
+                    - img
+                  - generic [ref=e142]: Code
+                  - generic:
+                    - img
+          - generic [ref=e143]:
+            - generic [ref=e144]:
+              - heading "Folders and files" [level=2] [ref=e145]
+              - table "Folders and files" [ref=e146]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message":
+                      - generic "Last commit message"
+                    - columnheader "Last commit date":
+                      - generic "Last commit date"
+                - rowgroup [ref=e147]:
+                  - 'row "Latest commit rafaelxo commits by rafaelxo fix: history ui + delete/compare actions, session title codex (#11) Commit 503d31d · Apr 19, 20262 days ago History View commit history for this file." [ref=e148]':
+                    - 'cell "Latest commit rafaelxo commits by rafaelxo fix: history ui + delete/compare actions, session title codex (#11) Commit 503d31d · Apr 19, 20262 days ago History View commit history for this file." [ref=e149]':
+                      - generic [ref=e150]:
+                        - heading "Latest commit" [level=2] [ref=e151]
+                        - generic [ref=e152]:
+                          - generic [ref=e154]:
+                            - link "rafaelxo" [ref=e155] [cursor=pointer]:
+                              - /url: /rafaelxo
+                              - img "rafaelxo" [ref=e156]
+                            - link "commits by rafaelxo" [ref=e157] [cursor=pointer]:
+                              - /url: /agent-cockpit/agent-cockpit/commits?author=rafaelxo
+                              - text: rafaelxo
+                          - generic [ref=e160]:
+                            - 'link "fix: history ui + delete/compare actions, session title codex (" [ref=e161] [cursor=pointer]':
+                              - /url: /agent-cockpit/agent-cockpit/commit/503d31d50fa072fe468d41f7c6160b9c99f57492
+                            - link "#11" [ref=e162] [cursor=pointer]:
+                              - /url: https://github.com/agent-cockpit/agent-cockpit/pull/11
+                            - link ")" [ref=e163] [cursor=pointer]:
+                              - /url: /agent-cockpit/agent-cockpit/commit/503d31d50fa072fe468d41f7c6160b9c99f57492
+                        - generic [ref=e164]:
+                          - generic [ref=e166]:
+                            - link "Commit 503d31d" [ref=e167] [cursor=pointer]:
+                              - /url: /agent-cockpit/agent-cockpit/commit/503d31d50fa072fe468d41f7c6160b9c99f57492
+                              - text: 503d31d
+                            - text: ·
+                            - generic "Apr 19, 2026, 7:00 PM GMT-3" [ref=e168]: Apr 19, 20262 days ago
+                          - generic [ref=e169]:
+                            - heading "History" [level=2] [ref=e170]
+                            - link "View commit history for this file." [ref=e172] [cursor=pointer]:
+                              - /url: /agent-cockpit/agent-cockpit/commits/main/
+                              - generic [ref=e173]:
+                                - generic:
+                                  - img
+                  - row ".claude, (Directory) restore project tree after partial README commit Apr 15, 2026last week" [ref=e174]:
+                    - cell ".claude, (Directory)" [ref=e175]:
+                      - generic [ref=e176]:
+                        - img [ref=e177]
+                        - link ".claude, (Directory)" [ref=e182] [cursor=pointer]:
+                          - /url: /agent-cockpit/agent-cockpit/tree/main/.claude
+                          - text: .claude
+                    - cell "restore project tree after partial README commit" [ref=e183]:
+                      - link "restore project tree after partial README commit" [ref=e186] [cursor=pointer]:
+                        - /url: /agent-cockpit/agent-cockpit/commit/aa09dc1d2086a8816a37cc501c6917d4961183dc
+                    - cell "Apr 15, 2026last week" [ref=e187]:
+                      - generic [ref=e188]: Apr 15, 2026last week
+                  - 'row ".planning, (Directory) docs(quick-1): Add NPC behaviours for the sessions characters. They a… Apr 15, 2026last week" [ref=e189]':
+                    - cell ".planning, (Directory)" [ref=e190]:
+                      - generic [ref=e191]:
+                        - img [ref=e192]
+                        - link ".planning, (Directory)" [ref=e197] [cursor=pointer]:
+                          - /url: /agent-cockpit/agent-cockpit/tree/main/.planning
+                          - text: .planning
+                    - 'cell "docs(quick-1): Add NPC behaviours for the sessions characters. They a…" [ref=e198]':
+                      - 'link "docs(quick-1): Add NPC behaviours for the sessions characters. They a…" [ref=e201] [cursor=pointer]':
+                        - /url: /agent-cockpit/agent-cockpit/commit/dd411f0e5787bd30d3956905b880b56a6ddc54d1
+                    - cell "Apr 15, 2026last week" [ref=e202]:
+                      - generic [ref=e203]: Apr 15, 2026last week
+                  - row "assets/raw, (Directory) restore project tree after partial README commit Apr 15, 2026last week" [ref=e204]:
+                    - cell "assets/raw, (Directory)" [ref=e205]:
+                      - generic [ref=e206]:
+                        - img [ref=e207]
+                        - link "assets/raw, (Directory)" [ref=e212] [cursor=pointer]:
+                          - /url: /agent-cockpit/agent-cockpit/tree/main/assets/raw
+                          - text: assets/raw
+                    - cell "restore project tree after partial README commit" [ref=e213]:
+                      - link "restore project tree after partial README commit" [ref=e216] [cursor=pointer]:
+                        - /url: /agent-cockpit/agent-cockpit/commit/aa09dc1d2086a8816a37cc501c6917d4961183dc
+                    - cell "Apr 15, 2026last week" [ref=e217]:
+                      - generic [ref=e218]: Apr 15, 2026last week
+                  - 'row "packages, (Directory) fix: history ui + delete/compare actions, session title codex (#11) Apr 19, 20262 days ago" [ref=e219]':
+                    - cell "packages, (Directory)" [ref=e220]:
+                      - generic [ref=e221]:
+                        - img [ref=e222]
+                        - link "packages, (Directory)" [ref=e227] [cursor=pointer]:
+                          - /url: /agent-cockpit/agent-cockpit/tree/main/packages
+                          - text: packages
+                    - 'cell "fix: history ui + delete/compare actions, session title codex (#11)" [ref=e228]':
+                      - generic [ref=e230]:
+                        - 'link "fix: history ui + delete/compare actions, session title codex (" [ref=e231] [cursor=pointer]':
+                          - /url: /agent-cockpit/agent-cockpit/commit/503d31d50fa072fe468d41f7c6160b9c99f57492
+                        - link "#11" [ref=e232] [cursor=pointer]:
+                          - /url: https://github.com/agent-cockpit/agent-cockpit/pull/11
+                        - link ")" [ref=e233] [cursor=pointer]:
+                          - /url: /agent-cockpit/agent-cockpit/commit/503d31d50fa072fe468d41f7c6160b9c99f57492
+                    - cell "Apr 19, 20262 days ago" [ref=e234]:
+                      - generic [ref=e235]: Apr 19, 20262 days ago
+                  - row "scripts, (Directory) restore project tree after partial README commit Apr 15, 2026last week" [ref=e236]:
+                    - cell "scripts, (Directory)" [ref=e237]:
+                      - generic [ref=e238]:
+                        - img [ref=e239]
+                        - link "scripts, (Directory)" [ref=e244] [cursor=pointer]:
+                          - /url: /agent-cockpit/agent-cockpit/tree/main/scripts
+                          - text: scripts
+                    - cell "restore project tree after partial README commit" [ref=e245]:
+                      - link "restore project tree after partial README commit" [ref=e248] [cursor=pointer]:
+                        - /url: /agent-cockpit/agent-cockpit/commit/aa09dc1d2086a8816a37cc501c6917d4961183dc
+                    - cell "Apr 15, 2026last week" [ref=e249]:
+                      - generic [ref=e250]: Apr 15, 2026last week
+                  - 'row ".gitignore, (File) fix: ai sessions, approval queue and popup ui Apr 17, 20264 days ago" [ref=e251]':
+                    - cell ".gitignore, (File)" [ref=e252]:
+                      - generic [ref=e253]:
+                        - img [ref=e254]
+                        - link ".gitignore, (File)" [ref=e259] [cursor=pointer]:
+                          - /url: /agent-cockpit/agent-cockpit/blob/main/.gitignore
+                          - text: .gitignore
+                    - 'cell "fix: ai sessions, approval queue and popup ui" [ref=e260]':
+                      - 'link "fix: ai sessions, approval queue and popup ui" [ref=e263] [cursor=pointer]':
+                        - /url: /agent-cockpit/agent-cockpit/commit/ac1d9f1ad776f366b4bc14b6c4aa37ea2b3b9099
+                    - cell "Apr 17, 20264 days ago" [ref=e264]:
+                      - generic [ref=e265]: Apr 17, 20264 days ago
+                  - row ".npmrc, (File) restore project tree after partial README commit Apr 15, 2026last week" [ref=e266]:
+                    - cell ".npmrc, (File)" [ref=e267]:
+                      - generic [ref=e268]:
+                        - img [ref=e269]
+                        - link ".npmrc, (File)" [ref=e274] [cursor=pointer]:
+                          - /url: /agent-cockpit/agent-cockpit/blob/main/.npmrc
+                          - text: .npmrc
+                    - cell "restore project tree after partial README commit" [ref=e275]:
+                      - link "restore project tree after partial README commit" [ref=e278] [cursor=pointer]:
+                        - /url: /agent-cockpit/agent-cockpit/commit/aa09dc1d2086a8816a37cc501c6917d4961183dc
+                    - cell "Apr 15, 2026last week" [ref=e279]:
+                      - generic [ref=e280]: Apr 15, 2026last week
+                  - 'row "README.md, (File) docs: main readme repo description Apr 15, 2026last week" [ref=e281]':
+                    - cell "README.md, (File)" [ref=e282]:
+                      - generic [ref=e283]:
+                        - img [ref=e284]
+                        - link "README.md, (File)" [ref=e289] [cursor=pointer]:
+                          - /url: /agent-cockpit/agent-cockpit/blob/main/README.md
+                          - text: README.md
+                    - 'cell "docs: main readme repo description" [ref=e290]':
+                      - 'link "docs: main readme repo description" [ref=e293] [cursor=pointer]':
+                        - /url: /agent-cockpit/agent-cockpit/commit/fff2d6083e5ce2934b06abaf78772d7b3b7f81bd
+                    - cell "Apr 15, 2026last week" [ref=e294]:
+                      - generic [ref=e295]: Apr 15, 2026last week
+                  - row "package.json, (File) restore project tree after partial README commit Apr 15, 2026last week" [ref=e296]:
+                    - cell "package.json, (File)" [ref=e297]:
+                      - generic [ref=e298]:
+                        - img [ref=e299]
+                        - link "package.json, (File)" [ref=e304] [cursor=pointer]:
+                          - /url: /agent-cockpit/agent-cockpit/blob/main/package.json
+                          - text: package.json
+                    - cell "restore project tree after partial README commit" [ref=e305]:
+                      - link "restore project tree after partial README commit" [ref=e308] [cursor=pointer]:
+                        - /url: /agent-cockpit/agent-cockpit/commit/aa09dc1d2086a8816a37cc501c6917d4961183dc
+                    - cell "Apr 15, 2026last week" [ref=e309]:
+                      - generic [ref=e310]: Apr 15, 2026last week
+                  - row "pnpm-lock.yaml, (File) restore project tree after partial README commit Apr 15, 2026last week" [ref=e311]:
+                    - cell "pnpm-lock.yaml, (File)" [ref=e312]:
+                      - generic [ref=e313]:
+                        - img [ref=e314]
+                        - link "pnpm-lock.yaml, (File)" [ref=e319] [cursor=pointer]:
+                          - /url: /agent-cockpit/agent-cockpit/blob/main/pnpm-lock.yaml
+                          - text: pnpm-lock.yaml
+                    - cell "restore project tree after partial README commit" [ref=e320]:
+                      - link "restore project tree after partial README commit" [ref=e323] [cursor=pointer]:
+                        - /url: /agent-cockpit/agent-cockpit/commit/aa09dc1d2086a8816a37cc501c6917d4961183dc
+                    - cell "Apr 15, 2026last week" [ref=e324]:
+                      - generic [ref=e325]: Apr 15, 2026last week
+                  - row "pnpm-workspace.yaml, (File) restore project tree after partial README commit Apr 15, 2026last week" [ref=e326]:
+                    - cell "pnpm-workspace.yaml, (File)" [ref=e327]:
+                      - generic [ref=e328]:
+                        - img [ref=e329]
+                        - link "pnpm-workspace.yaml, (File)" [ref=e334] [cursor=pointer]:
+                          - /url: /agent-cockpit/agent-cockpit/blob/main/pnpm-workspace.yaml
+                          - text: pnpm-workspace.yaml
+                    - cell "restore project tree after partial README commit" [ref=e335]:
+                      - link "restore project tree after partial README commit" [ref=e338] [cursor=pointer]:
+                        - /url: /agent-cockpit/agent-cockpit/commit/aa09dc1d2086a8816a37cc501c6917d4961183dc
+                    - cell "Apr 15, 2026last week" [ref=e339]:
+                      - generic [ref=e340]: Apr 15, 2026last week
+                  - row "tsconfig.base.json, (File) restore project tree after partial README commit Apr 15, 2026last week" [ref=e341]:
+                    - cell "tsconfig.base.json, (File)" [ref=e342]:
+                      - generic [ref=e343]:
+                        - img [ref=e344]
+                        - link "tsconfig.base.json, (File)" [ref=e349] [cursor=pointer]:
+                          - /url: /agent-cockpit/agent-cockpit/blob/main/tsconfig.base.json
+                          - text: tsconfig.base.json
+                    - cell "restore project tree after partial README commit" [ref=e350]:
+                      - link "restore project tree after partial README commit" [ref=e353] [cursor=pointer]:
+                        - /url: /agent-cockpit/agent-cockpit/commit/aa09dc1d2086a8816a37cc501c6917d4961183dc
+                    - cell "Apr 15, 2026last week" [ref=e354]:
+                      - generic [ref=e355]: Apr 15, 2026last week
+                  - row "vitest.config.ts, (File) restore project tree after partial README commit Apr 15, 2026last week" [ref=e356]:
+                    - cell "vitest.config.ts, (File)" [ref=e357]:
+                      - generic [ref=e358]:
+                        - img [ref=e359]
+                        - link "vitest.config.ts, (File)" [ref=e364] [cursor=pointer]:
+                          - /url: /agent-cockpit/agent-cockpit/blob/main/vitest.config.ts
+                          - text: vitest.config.ts
+                    - cell "restore project tree after partial README commit" [ref=e365]:
+                      - link "restore project tree after partial README commit" [ref=e368] [cursor=pointer]:
+                        - /url: /agent-cockpit/agent-cockpit/commit/aa09dc1d2086a8816a37cc501c6917d4961183dc
+                    - cell "Apr 15, 2026last week" [ref=e369]:
+                      - generic [ref=e370]: Apr 15, 2026last week
+            - generic [ref=e372]:
+              - generic [ref=e373]:
+                - heading "Repository files navigation" [level=2] [ref=e374]
+                - navigation "Repository files" [ref=e375]:
+                  - list [ref=e376]:
+                    - listitem [ref=e377]:
+                      - link "README" [ref=e378] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e380]
+                        - generic [ref=e382]: README
+                - button "Outline" [ref=e383] [cursor=pointer]:
+                  - img [ref=e384]
+              - article [ref=e387]:
+                - generic [ref=e388]:
+                  - heading "Agent Cockpit" [level=1] [ref=e389]
+                  - 'link "Permalink: Agent Cockpit" [ref=e390] [cursor=pointer]':
+                    - /url: "#agent-cockpit"
+                    - img [ref=e391]
+                - paragraph [ref=e393]: Agent Cockpit is a local-first control room for running multiple coding agents at the same time. It turns Claude Code and Codex sessions into something you can actually see, manage, approve, and review, with a pixel-art office on top and an operational control plane underneath.
+                - paragraph [ref=e394]: The goal is to replace terminal sprawl with a single interface for visibility, approvals, diffs, memory, history, and live agent status.
+                - generic [ref=e395]:
+                  - heading "Table of Contents" [level=2] [ref=e396]
+                  - 'link "Permalink: Table of Contents" [ref=e397] [cursor=pointer]':
+                    - /url: "#table-of-contents"
+                    - img [ref=e398]
+                - list [ref=e400]:
+                  - listitem [ref=e401]:
+                    - link "The Idea" [ref=e402] [cursor=pointer]:
+                      - /url: "#the-idea"
+                  - listitem [ref=e403]:
+                    - link "Core Features" [ref=e404] [cursor=pointer]:
+                      - /url: "#core-features"
+                  - listitem [ref=e405]:
+                    - link "How It Works" [ref=e406] [cursor=pointer]:
+                      - /url: "#how-it-works"
+                  - listitem [ref=e407]:
+                    - link "Architecture" [ref=e408] [cursor=pointer]:
+                      - /url: "#architecture"
+                  - listitem [ref=e409]:
+                    - link "Stack" [ref=e410] [cursor=pointer]:
+                      - /url: "#stack"
+                  - listitem [ref=e411]:
+                    - link "Requirements" [ref=e412] [cursor=pointer]:
+                      - /url: "#requirements"
+                  - listitem [ref=e413]:
+                    - link "Installation" [ref=e414] [cursor=pointer]:
+                      - /url: "#installation"
+                  - listitem [ref=e415]:
+                    - link "Available Scripts" [ref=e416] [cursor=pointer]:
+                      - /url: "#available-scripts"
+                  - listitem [ref=e417]:
+                    - link "Usage" [ref=e418] [cursor=pointer]:
+                      - /url: "#usage"
+                  - listitem [ref=e419]:
+                    - link "Project Status" [ref=e420] [cursor=pointer]:
+                      - /url: "#project-status"
+                  - listitem [ref=e421]:
+                    - link "Roadmap" [ref=e422] [cursor=pointer]:
+                      - /url: "#roadmap"
+                  - listitem [ref=e423]:
+                    - link "Known Limitations" [ref=e424] [cursor=pointer]:
+                      - /url: "#known-limitations"
+                  - listitem [ref=e425]:
+                    - link "Troubleshooting" [ref=e426] [cursor=pointer]:
+                      - /url: "#troubleshooting"
+                  - listitem [ref=e427]:
+                    - link "Contributing" [ref=e428] [cursor=pointer]:
+                      - /url: "#contributing"
+                  - listitem [ref=e429]:
+                    - link "License" [ref=e430] [cursor=pointer]:
+                      - /url: "#license"
+                - generic [ref=e431]:
+                  - heading "The Idea" [level=2] [ref=e432]
+                  - 'link "Permalink: The Idea" [ref=e433] [cursor=pointer]':
+                    - /url: "#the-idea"
+                    - img [ref=e434]
+                - paragraph [ref=e436]: "If you run several agent sessions at once, the hard part is not launching them. The hard part is knowing:"
+                - list [ref=e437]:
+                  - listitem [ref=e438]: what each agent is doing right now
+                  - listitem [ref=e439]: which session needs your attention
+                  - listitem [ref=e440]: which approval is safe to grant
+                  - listitem [ref=e441]: what changed in the repository
+                  - listitem [ref=e442]: how to find the session again later
+                - paragraph [ref=e443]: Agent Cockpit solves that by combining a visual office map with a structured operations dashboard.
+                - generic [ref=e444]:
+                  - heading "Core Features" [level=2] [ref=e445]
+                  - 'link "Permalink: Core Features" [ref=e446] [cursor=pointer]':
+                    - /url: "#core-features"
+                    - img [ref=e447]
+                - generic [ref=e449]:
+                  - heading "Office Mode" [level=3] [ref=e450]
+                  - 'link "Permalink: Office Mode" [ref=e451] [cursor=pointer]':
+                    - /url: "#office-mode"
+                    - img [ref=e452]
+                - list [ref=e454]:
+                  - listitem [ref=e455]: Each active session appears as a character in a pixel-art office.
+                  - listitem [ref=e456]: Agent state is reflected visually through animation and placement.
+                  - listitem [ref=e457]: Clicking an agent opens its detailed session view.
+                  - listitem [ref=e458]: The map acts as the main spatial layer of the product.
+                  - listitem [ref=e459]: The player also has a character on the map.
+                  - listitem [ref=e460]: The experience is designed to feel like a game, not just a dashboard.
+                - generic [ref=e461]:
+                  - heading "Ops Mode" [level=3] [ref=e462]
+                  - 'link "Permalink: Ops Mode" [ref=e463] [cursor=pointer]':
+                    - /url: "#ops-mode"
+                    - img [ref=e464]
+                - list [ref=e466]:
+                  - listitem [ref=e467]: Session list with live status.
+                  - listitem [ref=e468]: Detailed session view.
+                  - listitem [ref=e469]: Approval inbox for actions that need review.
+                  - listitem [ref=e470]: Timeline for replaying session activity.
+                  - listitem [ref=e471]: Diff viewer for changed files.
+                  - listitem [ref=e472]: Memory panel for project instructions and notes.
+                  - listitem [ref=e473]: Artifact and history surfaces for deeper inspection.
+                - generic [ref=e474]:
+                  - heading "Unified Approvals" [level=3] [ref=e475]
+                  - 'link "Permalink: Unified Approvals" [ref=e476] [cursor=pointer]':
+                    - /url: "#unified-approvals"
+                    - img [ref=e477]
+                - list [ref=e479]:
+                  - listitem [ref=e480]: Approvals from Claude Code and Codex appear in one queue.
+                  - listitem [ref=e481]: Each request can be reviewed with context.
+                  - listitem [ref=e482]: Support for approve once, deny once, and always allow within a session.
+                  - listitem [ref=e483]: Risk context helps you make faster and safer decisions.
+                  - listitem [ref=e484]: Decisions are stored locally.
+                - generic [ref=e485]:
+                  - heading "Timeline and Replay" [level=3] [ref=e486]
+                  - 'link "Permalink: Timeline and Replay" [ref=e487] [cursor=pointer]':
+                    - /url: "#timeline-and-replay"
+                    - img [ref=e488]
+                - list [ref=e490]:
+                  - listitem [ref=e491]: Events are shown in chronological order.
+                  - listitem [ref=e492]: You can inspect what happened during a session.
+                  - listitem [ref=e493]: Approval events, tool calls, file changes, and completion events are all visible.
+                  - listitem [ref=e494]: Useful for debugging, reviewing, and understanding agent behavior.
+                - generic [ref=e495]:
+                  - heading "Diff and Artifact Review" [level=3] [ref=e496]
+                  - 'link "Permalink: Diff and Artifact Review" [ref=e497] [cursor=pointer]':
+                    - /url: "#diff-and-artifact-review"
+                    - img [ref=e498]
+                - list [ref=e500]:
+                  - listitem [ref=e501]: See what files changed during a session.
+                  - listitem [ref=e502]: Inspect diffs per file.
+                  - listitem [ref=e503]: Review session summaries.
+                  - listitem [ref=e504]: Useful for auditing agent output before you merge or accept it.
+                - generic [ref=e505]:
+                  - heading "Memory Panel" [level=3] [ref=e506]
+                  - 'link "Permalink: Memory Panel" [ref=e507] [cursor=pointer]':
+                    - /url: "#memory-panel"
+                    - img [ref=e508]
+                - list [ref=e510]:
+                  - listitem [ref=e511]: View and edit project memory.
+                  - listitem [ref=e512]: Keep persistent instructions and conventions in one place.
+                  - listitem [ref=e513]: Read and update knowledge that agents should remember.
+                  - listitem [ref=e514]: Support for normalized memory surfaces across providers.
+                - generic [ref=e515]:
+                  - heading "Session History" [level=3] [ref=e516]
+                  - 'link "Permalink: Session History" [ref=e517] [cursor=pointer]':
+                    - /url: "#session-history"
+                    - img [ref=e518]
+                - list [ref=e520]:
+                  - listitem [ref=e521]: Reopen old sessions.
+                  - listitem [ref=e522]: Inspect prior work after a session has ended.
+                  - listitem [ref=e523]: Search and compare historical runs.
+                  - listitem [ref=e524]: Useful when you need to answer questions like what happened yesterday on a repo.
+                - generic [ref=e525]:
+                  - heading "How It Works" [level=2] [ref=e526]
+                  - 'link "Permalink: How It Works" [ref=e527] [cursor=pointer]':
+                    - /url: "#how-it-works"
+                    - img [ref=e528]
+                - paragraph [ref=e530]: "Agent Cockpit has three main layers:"
+                - list [ref=e531]:
+                  - listitem [ref=e532]:
+                    - paragraph [ref=e533]: Provider layer Claude Code and Codex emit events and approvals through their native integration surfaces.
+                  - listitem [ref=e534]:
+                    - paragraph [ref=e535]: Daemon layer A local daemon normalizes provider events, stores them in SQLite, and broadcasts live updates over WebSocket.
+                  - listitem [ref=e536]:
+                    - paragraph [ref=e537]: Browser UI The React interface consumes live events and updates the office map, operational panels, and session detail views.
+                - paragraph [ref=e538]: "In practice, the flow looks like this:"
+                - list [ref=e539]:
+                  - listitem [ref=e540]: an agent performs an action
+                  - listitem [ref=e541]: the daemon receives the event
+                  - listitem [ref=e542]: the event is normalized and persisted locally
+                  - listitem [ref=e543]: the browser updates in real time
+                  - listitem [ref=e544]: you approve, inspect, or redirect the session
+                - generic [ref=e545]:
+                  - heading "Architecture" [level=2] [ref=e546]
+                  - 'link "Permalink: Architecture" [ref=e547] [cursor=pointer]':
+                    - /url: "#architecture"
+                    - img [ref=e548]
+                - paragraph [ref=e550]: "The repository is organized as a monorepo with three primary packages:"
+                - list [ref=e551]:
+                  - listitem [ref=e552]:
+                    - code [ref=e553]: packages/daemon
+                    - text: ": local TypeScript daemon"
+                  - listitem [ref=e554]:
+                    - code [ref=e555]: packages/ui
+                    - text: ": React and Vite browser UI"
+                  - listitem [ref=e556]:
+                    - code [ref=e557]: packages/shared
+                    - text: ": shared event types and validation"
+                - paragraph [ref=e558]: "Supporting folders include:"
+                - list [ref=e559]:
+                  - listitem [ref=e560]:
+                    - code [ref=e561]: assets
+                    - text: ": sprites, maps, and visual resources"
+                  - listitem [ref=e562]:
+                    - code [ref=e563]: scripts
+                    - text: ": asset processing and validation utilities"
+                  - listitem [ref=e564]:
+                    - code [ref=e565]: .planning
+                    - text: ": product vision, requirements, roadmap, and current state"
+                - generic [ref=e566]:
+                  - heading "Stack" [level=2] [ref=e567]
+                  - 'link "Permalink: Stack" [ref=e568] [cursor=pointer]':
+                    - /url: "#stack"
+                    - img [ref=e569]
+                - list [ref=e571]:
+                  - listitem [ref=e572]: TypeScript
+                  - listitem [ref=e573]: Node.js
+                  - listitem [ref=e574]: better-sqlite3
+                  - listitem [ref=e575]: ws
+                  - listitem [ref=e576]: Zod
+                  - listitem [ref=e577]: React
+                  - listitem [ref=e578]: Vite
+                  - listitem [ref=e579]: Zustand
+                  - listitem [ref=e580]: Radix UI
+                  - listitem [ref=e581]: Tailwind CSS
+                  - listitem [ref=e582]: Canvas 2D for the visual layer
+                  - listitem [ref=e583]: sharp for sprite and asset processing
+                - generic [ref=e584]:
+                  - heading "Requirements" [level=2] [ref=e585]
+                  - 'link "Permalink: Requirements" [ref=e586] [cursor=pointer]':
+                    - /url: "#requirements"
+                    - img [ref=e587]
+                - list [ref=e589]:
+                  - listitem [ref=e590]: Node.js 22 or newer
+                  - listitem [ref=e591]: pnpm
+                  - listitem [ref=e592]: Claude Code CLI configured
+                  - listitem [ref=e593]: Codex CLI configured
+                  - listitem [ref=e594]: A modern desktop browser
+                  - listitem [ref=e595]: Local filesystem access for the workspace and session data
+                - generic [ref=e596]:
+                  - heading "Installation" [level=2] [ref=e597]
+                  - 'link "Permalink: Installation" [ref=e598] [cursor=pointer]':
+                    - /url: "#installation"
+                    - img [ref=e599]
+                - generic [ref=e601]:
+                  - generic [ref=e602]: pnpm install pnpm build pnpm --filter @cockpit/daemon dev pnpm --filter @cockpit/ui dev
+                  - button "Copy" [ref=e604] [cursor=pointer]:
+                    - img [ref=e605]
+                - generic [ref=e608]:
+                  - heading "Available Scripts" [level=2] [ref=e609]
+                  - 'link "Permalink: Available Scripts" [ref=e610] [cursor=pointer]':
+                    - /url: "#available-scripts"
+                    - img [ref=e611]
+                - paragraph [ref=e613]: "Root scripts:"
+                - list [ref=e614]:
+                  - listitem [ref=e615]:
+                    - code [ref=e616]: pnpm test
+                  - listitem [ref=e617]:
+                    - code [ref=e618]: pnpm build
+                  - listitem [ref=e619]:
+                    - code [ref=e620]: pnpm typecheck
+                  - listitem [ref=e621]:
+                    - code [ref=e622]: pnpm sync-map
+                  - listitem [ref=e623]:
+                    - code [ref=e624]: pnpm copy-faces
+                - paragraph [ref=e625]: "Package scripts:"
+                - list [ref=e626]:
+                  - listitem [ref=e627]:
+                    - code [ref=e628]: packages/daemon
+                    - text: ":"
+                    - code [ref=e629]: start
+                    - text: ","
+                    - code [ref=e630]: dev
+                    - text: ","
+                    - code [ref=e631]: test
+                    - text: ","
+                    - code [ref=e632]: typecheck
+                  - listitem [ref=e633]:
+                    - code [ref=e634]: packages/ui
+                    - text: ":"
+                    - code [ref=e635]: dev
+                    - text: ","
+                    - code [ref=e636]: build
+                    - text: ","
+                    - code [ref=e637]: preview
+                    - text: ","
+                    - code [ref=e638]: test
+                    - text: ","
+                    - code [ref=e639]: typecheck
+                  - listitem [ref=e640]:
+                    - code [ref=e641]: packages/shared
+                    - text: ":"
+                    - code [ref=e642]: test
+                    - text: ","
+                    - code [ref=e643]: typecheck
+                - generic [ref=e644]:
+                  - heading "Usage" [level=2] [ref=e645]
+                  - 'link "Permalink: Usage" [ref=e646] [cursor=pointer]':
+                    - /url: "#usage"
+                    - img [ref=e647]
+                - list [ref=e649]:
+                  - listitem [ref=e650]: Open the UI in your browser.
+                  - listitem [ref=e651]: Connect or launch Claude Code and Codex sessions.
+                  - listitem [ref=e652]: Watch the agents appear in the office.
+                  - listitem [ref=e653]: Click an agent to open its details.
+                  - listitem [ref=e654]: Review approvals, timeline, diff, and memory.
+                  - listitem [ref=e655]: Use history to revisit older sessions.
+                - generic [ref=e656]:
+                  - heading "Project Status" [level=2] [ref=e657]
+                  - 'link "Permalink: Project Status" [ref=e658] [cursor=pointer]':
+                    - /url: "#project-status"
+                    - img [ref=e659]
+                - paragraph [ref=e661]: "The project already covers the operational and visual foundations of the control room, including:"
+                - list [ref=e662]:
+                  - listitem [ref=e663]: Office Mode
+                  - listitem [ref=e664]: Ops Mode
+                  - listitem [ref=e665]: unified approvals
+                  - listitem [ref=e666]: memory
+                  - listitem [ref=e667]: timeline
+                  - listitem [ref=e668]: diff review
+                  - listitem [ref=e669]: session history
+                - paragraph [ref=e670]: The current direction is to make the experience feel more like a polished game while preserving its value as a serious control layer for multiple agents.
+                - generic [ref=e671]:
+                  - heading "Roadmap" [level=2] [ref=e672]
+                  - 'link "Permalink: Roadmap" [ref=e673] [cursor=pointer]':
+                    - /url: "#roadmap"
+                    - img [ref=e674]
+                - paragraph [ref=e676]: "Planned directions include:"
+                - list [ref=e677]:
+                  - listitem [ref=e678]: more natural movement and animation
+                  - listitem [ref=e679]: state-driven NPC behavior
+                  - listitem [ref=e680]: ambient audio and sound effects
+                  - listitem [ref=e681]: save and load support
+                  - listitem [ref=e682]: richer notifications
+                  - listitem [ref=e683]: stronger search across history
+                  - listitem [ref=e684]: support for additional providers and session types
+                - generic [ref=e685]:
+                  - heading "Known Limitations" [level=2] [ref=e686]
+                  - 'link "Permalink: Known Limitations" [ref=e687] [cursor=pointer]':
+                    - /url: "#known-limitations"
+                    - img [ref=e688]
+                - list [ref=e690]:
+                  - listitem [ref=e691]: The system is local-first by design.
+                  - listitem [ref=e692]: Some flows depend on correct integration with external provider tools.
+                  - listitem [ref=e693]: The visual layer is desktop-first.
+                  - listitem [ref=e694]: Game-like behavior and navigation are still evolving alongside the roadmap.
+                - generic [ref=e695]:
+                  - heading "Troubleshooting" [level=2] [ref=e696]
+                  - 'link "Permalink: Troubleshooting" [ref=e697] [cursor=pointer]':
+                    - /url: "#troubleshooting"
+                    - img [ref=e698]
+                - list [ref=e700]:
+                  - listitem [ref=e701]: If a session does not appear, confirm the daemon is running.
+                  - listitem [ref=e702]: If approvals do not show up, check the WebSocket connection and provider configuration.
+                  - listitem [ref=e703]: If the UI looks stale, restart the browser client to force a reconnect.
+                  - listitem [ref=e704]: If sprites or the map do not load, verify the public assets and sync process.
+                - generic [ref=e705]:
+                  - heading "Contributing" [level=2] [ref=e706]
+                  - 'link "Permalink: Contributing" [ref=e707] [cursor=pointer]':
+                    - /url: "#contributing"
+                    - img [ref=e708]
+                - paragraph [ref=e710]: "Contributions are welcome, especially in these areas:"
+                - list [ref=e711]:
+                  - listitem [ref=e712]: new provider integrations
+                  - listitem [ref=e713]: approval UX
+                  - listitem [ref=e714]: Office Mode polish
+                  - listitem [ref=e715]: replay and diffs
+                  - listitem [ref=e716]: search and history
+                  - listitem [ref=e717]: audio, movement, and interaction
+                  - listitem [ref=e718]: tests and daemon robustness
+                - paragraph [ref=e719]:
+                  - text: Before contributing, read the documents in
+                  - code [ref=e720]: .planning
+                  - text: to understand the current project state, constraints, and implementation decisions.
+                - generic [ref=e721]:
+                  - heading "License" [level=2] [ref=e722]
+                  - 'link "Permalink: License" [ref=e723] [cursor=pointer]':
+                    - /url: "#license"
+                    - img [ref=e724]
+                - paragraph [ref=e726]: MIT
+        - generic [ref=e730]:
+          - generic [ref=e733]:
+            - heading "About" [level=2] [ref=e734]
+            - generic [ref=e735]: No description, website, or topics provided.
+            - heading "Resources" [level=3] [ref=e736]
+            - link "Readme" [ref=e738] [cursor=pointer]:
+              - /url: "#readme-ov-file"
+              - img [ref=e739]
+              - text: Readme
+            - link "Activity" [ref=e742] [cursor=pointer]:
+              - /url: /agent-cockpit/agent-cockpit/activity
+              - img [ref=e743]
+              - text: Activity
+            - link "Custom properties" [ref=e746] [cursor=pointer]:
+              - /url: /agent-cockpit/agent-cockpit/custom-properties
+              - img [ref=e747]
+              - text: Custom properties
+            - heading "Stars" [level=3] [ref=e749]
+            - link "12 stars" [ref=e751] [cursor=pointer]:
+              - /url: /agent-cockpit/agent-cockpit/stargazers
+              - img [ref=e752]
+              - strong [ref=e754]: "12"
+              - text: stars
+            - heading "Watchers" [level=3] [ref=e755]
+            - link "0 watching" [ref=e757] [cursor=pointer]:
+              - /url: /agent-cockpit/agent-cockpit/watchers
+              - img [ref=e758]
+              - strong [ref=e760]: "0"
+              - text: watching
+            - heading "Forks" [level=3] [ref=e761]
+            - link "0 forks" [ref=e763] [cursor=pointer]:
+              - /url: /agent-cockpit/agent-cockpit/forks
+              - img [ref=e764]
+              - strong [ref=e766]: "0"
+              - text: forks
+            - link "Report repository" [ref=e768] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fagent-cockpit%2Fagent-cockpit&report=agent-cockpit+%28user%29
+          - generic [ref=e770]:
+            - heading "Releases" [level=2] [ref=e771]:
+              - link "Releases" [ref=e772] [cursor=pointer]:
+                - /url: /agent-cockpit/agent-cockpit/releases
+            - generic [ref=e773]: No releases published
+          - generic [ref=e775]:
+            - heading "Packages" [level=2] [ref=e776]:
+              - link "Packages" [ref=e777] [cursor=pointer]:
+                - /url: /orgs/agent-cockpit/packages?repo_name=agent-cockpit
+            - generic [ref=e778]: No packages published
+          - generic [ref=e780]:
+            - heading "Contributors 4" [level=2] [ref=e781]:
+              - link "Contributors 4" [ref=e782] [cursor=pointer]:
+                - /url: /agent-cockpit/agent-cockpit/graphs/contributors
+                - text: Contributors
+                - generic "4" [ref=e783]
+            - list [ref=e784]:
+              - listitem [ref=e785]:
+                - link "@fabiobrug" [ref=e786] [cursor=pointer]:
+                  - /url: https://github.com/fabiobrug
+                  - img "@fabiobrug" [ref=e787]
+                - link "fabiobrug Fabio Brugnara" [ref=e789] [cursor=pointer]:
+                  - /url: https://github.com/fabiobrug
+                  - strong [ref=e790]: fabiobrug
+                  - text: Fabio Brugnara
+              - listitem [ref=e791]:
+                - link "@leo-stuart" [ref=e792] [cursor=pointer]:
+                  - /url: https://github.com/leo-stuart
+                  - img "@leo-stuart" [ref=e793]
+                - link "leo-stuart Leo Stuart" [ref=e795] [cursor=pointer]:
+                  - /url: https://github.com/leo-stuart
+                  - strong [ref=e796]: leo-stuart
+                  - text: Leo Stuart
+              - listitem [ref=e797]:
+                - link "@claude" [ref=e798] [cursor=pointer]:
+                  - /url: https://github.com/claude
+                  - img "@claude" [ref=e799]
+                - link "claude Claude" [ref=e801] [cursor=pointer]:
+                  - /url: https://github.com/claude
+                  - strong [ref=e802]: claude
+                  - text: Claude
+              - listitem [ref=e803]:
+                - link "@rafaelxo" [ref=e804] [cursor=pointer]:
+                  - /url: https://github.com/rafaelxo
+                  - img "@rafaelxo" [ref=e805]
+                - link "rafaelxo Rafael Xavier Oliveira" [ref=e807] [cursor=pointer]:
+                  - /url: https://github.com/rafaelxo
+                  - strong [ref=e808]: rafaelxo
+                  - text: Rafael Xavier Oliveira
+          - generic [ref=e810]:
+            - heading "Languages" [level=2] [ref=e811]
+            - list [ref=e816]:
+              - listitem [ref=e817]:
+                - link "TypeScript 99.0%" [ref=e818] [cursor=pointer]:
+                  - /url: /agent-cockpit/agent-cockpit/search?l=typescript
+                  - img [ref=e819]
+                  - generic [ref=e821]: TypeScript
+                  - generic [ref=e822]: 99.0%
+              - listitem [ref=e823]:
+                - generic [ref=e824]:
+                  - img [ref=e825]
+                  - generic [ref=e827]: Other
+                  - generic [ref=e828]: 1.0%
+  - contentinfo [ref=e830]:
+    - heading "Footer" [level=2] [ref=e831]
+    - generic [ref=e832]:
+      - generic [ref=e833]:
+        - link "GitHub Homepage" [ref=e834] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e835]
+        - generic [ref=e837]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e838]:
+        - heading "Footer navigation" [level=3] [ref=e839]
+        - list "Footer navigation" [ref=e840]:
+          - listitem [ref=e841]:
+            - link "Terms" [ref=e842] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e843]:
+            - link "Privacy" [ref=e844] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e845]:
+            - link "Security" [ref=e846] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e847]:
+            - link "Status" [ref=e848] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e849]:
+            - link "Community" [ref=e850] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e851]:
+            - link "Docs" [ref=e852] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e853]:
+            - link "Contact" [ref=e854] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e855]:
+            - button "Manage cookies" [ref=e857] [cursor=pointer]
+          - listitem [ref=e858]:
+            - button "Do not share my personal information" [ref=e860] [cursor=pointer]

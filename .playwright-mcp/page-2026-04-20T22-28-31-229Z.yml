@@ -1,0 +1,263 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - link "AGENT COCKPIT" [ref=e3] [cursor=pointer]:
+      - /url: "#"
+    - generic [ref=e4]:
+      - link "DOCS" [ref=e5] [cursor=pointer]:
+        - /url: /docs
+      - link "FEATURES" [ref=e6] [cursor=pointer]:
+        - /url: "#features"
+      - link "INSTALL" [ref=e7] [cursor=pointer]:
+        - /url: "#install"
+      - link "ROADMAP" [ref=e8] [cursor=pointer]:
+        - /url: "#roadmap"
+    - link "GitHub" [ref=e9] [cursor=pointer]:
+      - /url: https://github.com/agent-cockpit/agent-cockpit
+      - img [ref=e10]
+      - text: GitHub
+    - link "GET STARTED" [ref=e12] [cursor=pointer]:
+      - /url: "#install"
+  - generic [ref=e14]:
+    - generic [ref=e15]:
+      - generic [ref=e16]: OPEN SOURCE · MIT LICENSE
+      - heading "The control room for your coding agents." [level=1] [ref=e18]:
+        - text: The control room for your
+        - emphasis [ref=e19]: coding agents.
+      - paragraph [ref=e20]: Run Claude Code and Codex sessions simultaneously. Review, chat, approve — without ever losing the map.
+      - generic [ref=e21]:
+        - link "GET STARTED ▶" [ref=e22] [cursor=pointer]:
+          - /url: "#install"
+        - link "★ Star on GitHub" [ref=e23] [cursor=pointer]:
+          - /url: https://github.com/agent-cockpit/agent-cockpit
+        - link "DOCS →" [ref=e24] [cursor=pointer]:
+          - /url: /docs
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - img [ref=e27]
+          - generic [ref=e29]: MIT
+        - generic [ref=e30]:
+          - text: TypeScript
+          - generic [ref=e31]: React
+        - generic [ref=e32]:
+          - text: v
+          - generic [ref=e33]: 0.1.0-alpha
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - generic [ref=e38]:
+            - generic [ref=e39]: wizardly-mclaren · agent-cockpit
+            - generic [ref=e40]: /Users/leo/projects/agent-cockpit
+          - generic [ref=e41]: CLAUDE
+          - generic [ref=e42]: CODING
+          - generic [ref=e44]: T+18:42
+          - generic [ref=e45]:
+            - button "—" [ref=e46] [cursor=pointer]
+            - button "▢" [ref=e47] [cursor=pointer]
+            - button "×" [ref=e48] [cursor=pointer]
+        - generic [ref=e49]:
+          - button "Approvals 3" [ref=e50] [cursor=pointer]
+          - button "Chat" [ref=e51] [cursor=pointer]
+          - button "Timeline" [ref=e52] [cursor=pointer]
+          - button "Diff" [ref=e53] [cursor=pointer]
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: ⬢
+            - generic [ref=e57]:
+              - generic [ref=e58]: SHELL · bash
+              - generic [ref=e59]:
+                - text: Run
+                - code [ref=e60]: rm -rf ./node_modules && pnpm install
+            - generic [ref=e61]:
+              - button "ALLOW A" [ref=e62] [cursor=pointer]
+              - button "DENY D" [ref=e63] [cursor=pointer]
+          - generic [ref=e64]:
+            - generic [ref=e65]: ▲
+            - generic [ref=e66]:
+              - generic [ref=e67]: EDIT · str_replace
+              - generic [ref=e68]:
+                - text: Modify
+                - code [ref=e69]: MapSidebar.tsx
+                - text: — expand chip grid
+            - generic [ref=e70]:
+              - button "ALLOW A" [ref=e71] [cursor=pointer]
+              - button "DENY D" [ref=e72] [cursor=pointer]
+          - generic [ref=e73]:
+            - generic [ref=e74]: ●
+            - generic [ref=e75]:
+              - generic [ref=e76]: READ · fetch
+              - generic [ref=e77]:
+                - text: Fetch
+                - code [ref=e78]: docs.anthropic.com
+                - text: (read-only)
+            - generic [ref=e79]:
+              - button "ALLOW A" [ref=e80] [cursor=pointer]
+              - button "DENY D" [ref=e81] [cursor=pointer]
+        - generic [ref=e82]:
+          - generic [ref=e83]: ● CONNECTED
+          - generic [ref=e85]: 24ms
+          - generic [ref=e87]: CTX 42%
+      - generic [ref=e88]:
+        - generic [ref=e89]:
+          - generic [ref=e92]: bouncing-lovelace · game-engine
+          - generic [ref=e93]: CODEX
+          - generic [ref=e94]: TESTING
+        - generic [ref=e97]:
+          - text: ▶ TOOL running pnpm test…
+          - text: 17 passed · 2 pending
+  - generic [ref=e99]:
+    - generic [ref=e101]: FEATURES
+    - heading "Built for real multi-agent sessions." [level=2] [ref=e103]
+    - paragraph [ref=e104]: Everything a solo dev needs to run 10+ agents without losing the plot.
+    - generic [ref=e105]:
+      - generic [ref=e106]:
+        - generic [ref=e107]: ⊞
+        - generic [ref=e108]: FLOATING INSTRUMENT WINDOWS
+        - generic [ref=e109]: Each agent lives in its own draggable, resizable window. Approvals, Chat, Diff, Timeline — all panels accessible without leaving the map.
+      - generic [ref=e110]:
+        - generic [ref=e111]: ⚑
+        - generic [ref=e112]: RISK-FIRST APPROVAL QUEUE
+        - generic [ref=e113]:
+          - text: "Every tool call is ranked:"
+          - code [ref=e114]: HIGH
+          - text: →
+          - code [ref=e115]: MED
+          - text: →
+          - code [ref=e116]: LOW
+          - text: . Keyboard shortcuts
+          - code [ref=e117]: A
+          - text: /
+          - code [ref=e118]: D
+          - text: /
+          - code [ref=e119]: E
+          - text: let you clear a queue in seconds without lifting your hands.
+      - generic [ref=e120]:
+        - generic [ref=e121]: ⌘
+        - generic [ref=e122]: COMMAND PALETTE
+        - generic [ref=e123]:
+          - code [ref=e124]: ⌘K
+          - text: to jump to any agent, open any panel, launch a session, or approve pending items — all by keyboard.
+      - generic [ref=e125]:
+        - generic [ref=e126]: ◈
+        - generic [ref=e127]: MULTI-PROVIDER
+        - generic [ref=e128]: Claude Code and Codex side-by-side. Each session carries a provider stripe so you always know which model is doing what.
+      - generic [ref=e129]:
+        - generic [ref=e130]: 🗺
+        - generic [ref=e131]: RPG MAP + TACMAP
+        - generic [ref=e132]: Agents walk around a pixel office. The tacmap (top-right radar) shows every agent's position and status at a glance — approval balloons float above heads needing attention.
+      - generic [ref=e133]:
+        - generic [ref=e134]: ⚙
+        - generic [ref=e135]: DAEMON ARCHITECTURE
+        - generic [ref=e136]:
+          - text: A local Node daemon manages sessions. The browser UI connects via WebSocket — zero cloud, all local. Works on any machine you can
+          - code [ref=e137]: pnpm install
+          - text: on.
+  - generic [ref=e139]:
+    - generic [ref=e141]: HOW IT WORKS
+    - heading "Three steps to mission control." [level=2] [ref=e143]
+    - generic [ref=e144]:
+      - generic [ref=e145]:
+        - generic [ref=e146]: "01"
+        - generic [ref=e147]: INSTALL & RUN DAEMON
+        - generic [ref=e148]: Clone the repo, install deps, and start the local daemon. It manages session lifecycles and exposes a WebSocket endpoint.
+      - generic [ref=e149]:
+        - generic [ref=e150]: "02"
+        - generic [ref=e151]: LAUNCH SESSIONS
+        - generic [ref=e152]:
+          - text: Open the browser UI, hit
+          - code [ref=e153]: + LAUNCH
+          - text: ", pick a provider and a workspace. Your agent spawns as a character on the map."
+      - generic [ref=e154]:
+        - generic [ref=e155]: "03"
+        - generic [ref=e156]: REVIEW & APPROVE
+        - generic [ref=e157]: When an agent needs permission, a balloon appears above its head. Click to open the approval queue, review the risk level, and approve or deny — all from the keyboard.
+  - generic [ref=e159]:
+    - generic [ref=e161]: QUICK START
+    - heading "Up in 3 commands." [level=2] [ref=e163]
+    - generic [ref=e164]:
+      - generic [ref=e165]: TERMINAL · BASH ▌
+      - generic [ref=e167]:
+        - generic [ref=e168]:
+          - generic [ref=e169]: 1 · CLONE
+          - generic [ref=e170]:
+            - generic [ref=e171]: $
+            - code [ref=e172]: git clone https://github.com/agent-cockpit/agent-cockpit.git
+            - button "COPY" [ref=e173] [cursor=pointer]
+        - generic [ref=e174]:
+          - generic [ref=e175]: 2 · INSTALL
+          - generic [ref=e176]:
+            - generic [ref=e177]: $
+            - code [ref=e178]: cd agent-cockpit && pnpm install
+            - button "COPY" [ref=e179] [cursor=pointer]
+        - generic [ref=e180]:
+          - generic [ref=e181]: 3 · LAUNCH
+          - generic [ref=e182]:
+            - generic [ref=e183]: $
+            - code [ref=e184]: pnpm dev
+            - button "COPY" [ref=e185] [cursor=pointer]
+        - paragraph [ref=e186]:
+          - text: Opens at
+          - link "http://localhost:5173" [ref=e187] [cursor=pointer]:
+            - /url: http://localhost:5173
+          - text: . Requires
+          - link "Node 20+" [ref=e188] [cursor=pointer]:
+            - /url: https://nodejs.org
+          - text: and
+          - link "pnpm" [ref=e189] [cursor=pointer]:
+            - /url: https://pnpm.io
+          - text: . Claude Code or Codex CLI must be installed and authenticated separately.
+          - link "→ Full getting started guide" [ref=e190] [cursor=pointer]:
+            - /url: /docs
+    - generic [ref=e191]:
+      - generic [ref=e192]:
+        - generic [ref=e193]: CLAUDE
+        - generic [ref=e194]: Claude Code
+        - generic [ref=e195]: Anthropic's long-context, tool-using coding agent. Best for large refactors, multi-file edits, and anything requiring deep codebase understanding.
+      - generic [ref=e196]:
+        - generic [ref=e197]: CODEX
+        - generic [ref=e198]: OpenAI Codex
+        - generic [ref=e199]: Fast, patch-focused agent. Strong for targeted fixes, test generation, and quick surgical edits where speed matters over context window.
+  - generic [ref=e201]:
+    - generic [ref=e203]: ROADMAP
+    - heading "Where this is going." [level=2] [ref=e205]
+    - generic [ref=e206]:
+      - generic [ref=e207]:
+        - generic [ref=e208]: PHASE 01–10
+        - generic [ref=e209]: "Core: game map, agent sprites, WebSocket daemon, session launch/terminate"
+        - generic [ref=e210]: SHIPPED
+      - generic [ref=e211]:
+        - generic [ref=e212]: PHASE 11–20
+        - generic [ref=e213]: "Panels: Chat, Timeline, Diff, Memory, Artifacts, Approval inbox, Provider badges"
+        - generic [ref=e214]: SHIPPED
+      - generic [ref=e215]:
+        - generic [ref=e216]: PHASE 21–29
+        - generic [ref=e217]: "Polish: Sidebar session chips, history page, audio system, minimap, NPC pathfinding"
+        - generic [ref=e218]: SHIPPED
+      - generic [ref=e219]:
+        - generic [ref=e220]: PHASE 30
+        - generic [ref=e221]: New map — larger world, more biomes, workspace zones, ambient NPCs
+        - generic [ref=e222]: IN PROGRESS
+      - generic [ref=e223]:
+        - generic [ref=e224]: PHASE 31
+        - generic [ref=e225]: Web UI redesign — floating instrument windows, command palette, dense top bar
+        - generic [ref=e226]: IN PROGRESS
+      - generic [ref=e227]:
+        - generic [ref=e228]: PHASE 32
+        - generic [ref=e229]: Multi-workspace grouping, session compare, diff archive, export
+        - generic [ref=e230]: NEXT
+      - generic [ref=e231]:
+        - generic [ref=e232]: FUTURE
+        - generic [ref=e233]: Remote daemon, team multiplayer map, agent-to-agent messaging, plugin API
+        - generic [ref=e234]: PLANNED
+  - contentinfo [ref=e235]:
+    - generic [ref=e236]: AGENT COCKPIT · MIT LICENSE · 2026
+    - generic [ref=e237]:
+      - link "GitHub" [ref=e238] [cursor=pointer]:
+        - /url: https://github.com/agent-cockpit/agent-cockpit
+      - link "Docs" [ref=e239] [cursor=pointer]:
+        - /url: /docs
+      - link "Roadmap" [ref=e240] [cursor=pointer]:
+        - /url: "#roadmap"
+      - link "Issues" [ref=e241] [cursor=pointer]:
+        - /url: https://github.com/agent-cockpit/agent-cockpit/issues
+      - link "Contributing" [ref=e242] [cursor=pointer]:
+        - /url: https://github.com/agent-cockpit/agent-cockpit/blob/main/CONTRIBUTING.md
