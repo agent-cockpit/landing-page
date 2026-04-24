@@ -1,6 +1,6 @@
-# agent-cockpit.dev — Landing Page
+# Agent Cockpit — Landing Page
 
-The marketing site for [Agent Cockpit](https://github.com/agent-cockpit/agent-cockpit), served at **[https://agent-cockpit.dev](https://agent-cockpit.dev)**.
+The marketing site for [Agent Cockpit](https://github.com/agent-cockpit/agent-cockpit), served at **[agent-cockpit.dev](https://agent-cockpit.dev)**.
 
 Built with Next.js 16, React 19, Tailwind CSS v4, and GSAP scroll-trigger animations. Matches the pixel-art / terminal aesthetic of the product itself.
 
@@ -127,6 +127,6 @@ Typography uses two variable fonts loaded via `next/font`:
 
 Agent Cockpit is a local-first control room for running multiple coding agents simultaneously. It turns Claude Code and Codex sessions into something you can see, manage, approve, and review — with a pixel-art office map on top and a full operational control plane underneath.
 
-**Repository:** [github.com/agent-cockpit/agent-cockpit](https://github.com/agent-cockpit/agent-cockpit)  
-**Product site:** [https://agent-cockpit.dev](https://agent-cockpit.dev)  
+**Repository:** [github.com/agent-cockpit/agent-cockpit](https://github.com/agent-cockpit/agent-cockpit)
+**Product site:** [agent-cockpit.dev](https://agent-cockpit.dev)
 **License:** MIT
