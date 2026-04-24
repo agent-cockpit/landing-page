@@ -24,6 +24,9 @@ const ibmPlexSans = IBM_Plex_Sans({
 export const metadata: Metadata = {
   title: "Agent Cockpit — The control room for your coding agents",
   description: "Run Claude Code and Codex sessions simultaneously. Review, chat, approve — without losing the map.",
+  icons: {
+    icon: "/assets/faces/astronaut.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

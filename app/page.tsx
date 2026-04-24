@@ -53,6 +53,10 @@ export default function HomePage() {
 
           <div className="hero-visual">
             <div className="hw" style={{ position: "relative", zIndex: 2 }}>
+              <span className="cockpit-corner cockpit-corner-tl" aria-hidden />
+              <span className="cockpit-corner cockpit-corner-tr" aria-hidden />
+              <span className="cockpit-corner cockpit-corner-bl" aria-hidden />
+              <span className="cockpit-corner cockpit-corner-br" aria-hidden />
               <div className="hw-head">
                 <div className="hw-face">
                   <Image src="/assets/faces/ninja.png" alt="" width={22} height={22} style={{ imageRendering: "pixelated" }} />
@@ -121,6 +125,10 @@ export default function HomePage() {
             </div>
 
             <div className="hw2">
+              <span className="cockpit-corner cockpit-corner-tl" aria-hidden />
+              <span className="cockpit-corner cockpit-corner-tr" aria-hidden />
+              <span className="cockpit-corner cockpit-corner-bl" aria-hidden />
+              <span className="cockpit-corner cockpit-corner-br" aria-hidden />
               <div className="hw-head" style={{ padding: "7px 10px 7px 12px" }}>
                 <div className="hw-face" style={{ borderColor: "color-mix(in srgb,var(--codex) 50%,transparent)" }}>
                   <Image src="/assets/faces/robot.png" alt="" width={22} height={22} style={{ imageRendering: "pixelated" }} />
@@ -154,31 +162,43 @@ export default function HomePage() {
           <p style={{ fontFamily: "var(--f-mono)", fontSize: 13, color: "var(--fg-2)", maxWidth: 540 }}>Everything a solo dev needs to run 10+ agents without losing the plot.</p>
           <div className="feat-grid">
             <div className="feat" style={{ "--feat-color": "var(--cyan)" } as React.CSSProperties}>
-              <div className="feat-icon">🗺</div>
+              <span className="cockpit-corner cockpit-corner-tl" aria-hidden />
+              <span className="cockpit-corner cockpit-corner-br" aria-hidden />
+              <div className="feat-icon">◫</div>
               <div className="feat-title">OFFICE MODE</div>
               <div className="feat-body">Each active session appears as a character in a pixel-art office. Agent state reflects through animation and placement. Clicking an agent opens its full session view. Designed to feel like a game, not just a dashboard.</div>
             </div>
             <div className="feat" style={{ "--feat-color": "var(--amber)" } as React.CSSProperties}>
+              <span className="cockpit-corner cockpit-corner-tl" aria-hidden />
+              <span className="cockpit-corner cockpit-corner-br" aria-hidden />
               <div className="feat-icon">⚑</div>
               <div className="feat-title">UNIFIED APPROVALS</div>
               <div className="feat-body">Approvals from Claude Code and Codex appear in one queue. Support for approve once, deny once, and always allow within a session. Risk context helps you make faster and safer decisions.</div>
             </div>
             <div className="feat" style={{ "--feat-color": "var(--green)" } as React.CSSProperties}>
+              <span className="cockpit-corner cockpit-corner-tl" aria-hidden />
+              <span className="cockpit-corner cockpit-corner-br" aria-hidden />
               <div className="feat-icon">◷</div>
               <div className="feat-title">TIMELINE & REPLAY</div>
               <div className="feat-body">Events in chronological order. Inspect what happened during a session — approval events, tool calls, file changes, and completion events are all visible. Useful for debugging and understanding agent behavior.</div>
             </div>
             <div className="feat" style={{ "--feat-color": "var(--codex)" } as React.CSSProperties}>
+              <span className="cockpit-corner cockpit-corner-tl" aria-hidden />
+              <span className="cockpit-corner cockpit-corner-br" aria-hidden />
               <div className="feat-icon">◈</div>
               <div className="feat-title">MULTI-PROVIDER</div>
               <div className="feat-body">Claude Code and Codex side-by-side. Each session carries a provider stripe so you always know which model is doing what. Normalized event handling across providers.</div>
             </div>
             <div className="feat" style={{ "--feat-color": "var(--claude)" } as React.CSSProperties}>
+              <span className="cockpit-corner cockpit-corner-tl" aria-hidden />
+              <span className="cockpit-corner cockpit-corner-br" aria-hidden />
               <div className="feat-icon">⊟</div>
               <div className="feat-title">DIFF & ARTIFACT REVIEW</div>
               <div className="feat-body">See what files changed during a session. Inspect diffs per file, review session summaries, and audit agent output before you merge or accept it.</div>
             </div>
             <div className="feat" style={{ "--feat-color": "var(--cyan)" } as React.CSSProperties}>
+              <span className="cockpit-corner cockpit-corner-tl" aria-hidden />
+              <span className="cockpit-corner cockpit-corner-br" aria-hidden />
               <div className="feat-icon">⊙</div>
               <div className="feat-title">MEMORY PANEL</div>
               <div className="feat-body">View and edit project memory. Keep persistent instructions and conventions in one place. Read and update knowledge that agents should remember across sessions.</div>
@@ -222,6 +242,10 @@ export default function HomePage() {
           </div>
           <h2 style={{ fontFamily: "var(--f-sans)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 700, letterSpacing: "-.02em", marginBottom: 6 }}>From zero to running.</h2>
           <div className="install-box">
+            <span className="cockpit-corner cockpit-corner-tl" aria-hidden />
+            <span className="cockpit-corner cockpit-corner-tr" aria-hidden />
+            <span className="cockpit-corner cockpit-corner-bl" aria-hidden />
+            <span className="cockpit-corner cockpit-corner-br" aria-hidden />
             <div className="install-head">
               <span className="dot" />
               TERMINAL · BASH
@@ -296,11 +320,15 @@ export default function HomePage() {
           </div>
           <div className="prov-grid" style={{ marginTop: 40 }}>
             <div className="prov-card" data-prov="claude">
+              <span className="cockpit-corner cockpit-corner-tl" aria-hidden />
+              <span className="cockpit-corner cockpit-corner-br" aria-hidden />
               <span className="prov-badge">CLAUDE</span>
               <div className="prov-title">Claude Code</div>
               <div className="prov-body">Anthropic&apos;s long-context, tool-using coding agent. Best for large refactors, multi-file edits, and anything requiring deep codebase understanding.</div>
             </div>
             <div className="prov-card" data-prov="codex">
+              <span className="cockpit-corner cockpit-corner-tl" aria-hidden />
+              <span className="cockpit-corner cockpit-corner-br" aria-hidden />
               <span className="prov-badge">CODEX</span>
               <div className="prov-title">OpenAI Codex</div>
               <div className="prov-body">Fast, patch-focused agent. Strong for targeted fixes, test generation, and quick surgical edits where speed matters over context window.</div>
