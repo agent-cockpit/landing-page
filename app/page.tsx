@@ -281,39 +281,15 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="install-group">
-                <span className="install-label">1 · CLONE</span>
+                <span className="install-label">1 · RUN</span>
                 <div className="code-line">
                   <span className="prompt">$</span>
-                  <code>git clone https://github.com/agent-cockpit/agent-cockpit.git</code>
-                  <CopyButton text="git clone https://github.com/agent-cockpit/agent-cockpit.git" />
-                </div>
-              </div>
-              <div className="install-group">
-                <span className="install-label">2 · INSTALL & BUILD</span>
-                <div className="code-line">
-                  <span className="prompt">$</span>
-                  <code>cd agent-cockpit && pnpm install && pnpm build</code>
-                  <CopyButton text="cd agent-cockpit && pnpm install && pnpm build" />
-                </div>
-              </div>
-              <div className="install-group">
-                <span className="install-label">3 · START DAEMON</span>
-                <div className="code-line">
-                  <span className="prompt">$</span>
-                  <code>pnpm --filter @cockpit/daemon dev</code>
-                  <CopyButton text="pnpm --filter @cockpit/daemon dev" />
-                </div>
-              </div>
-              <div className="install-group">
-                <span className="install-label">4 · START UI</span>
-                <div className="code-line">
-                  <span className="prompt">$</span>
-                  <code>pnpm --filter @cockpit/ui dev</code>
-                  <CopyButton text="pnpm --filter @cockpit/ui dev" />
+                  <code>npx @agentcockpit/agent-cockpit</code>
+                  <CopyButton text="npx @agentcockpit/agent-cockpit" />
                 </div>
               </div>
               <p className="install-note">
-                UI opens at <a href="http://localhost:5173">http://localhost:5173</a>. Requires <a href="https://nodejs.org">Node 22+</a> and <a href="https://pnpm.io">pnpm</a>. Run daemon and UI in separate terminals.<br />
+                Opens automatically at <a href="http://localhost:54321">http://localhost:54321</a>. Requires <a href="https://nodejs.org">Node 22+</a>.<br />
                 <Link href="/docs">→ Full getting started guide</Link>
               </p>
             </div>

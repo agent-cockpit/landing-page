@@ -91,7 +91,6 @@ export default function DocsPage() {
             <p className="doc-p">Before you start:</p>
             <ul className="doc-ul">
               <li><strong>Node 22+</strong> — <code>node --version</code> should print v22 or above</li>
-              <li><strong>pnpm 8+</strong> — install via <code>npm install -g pnpm</code></li>
               <li><strong>Claude Code CLI</strong> — installed and authenticated (see below)</li>
               <li>Or: <strong>Codex CLI</strong> — installed and authenticated (see below)</li>
             </ul>
@@ -104,13 +103,14 @@ export default function DocsPage() {
               <div className="callout-title">NOTE</div>
               Agent Cockpit does not manage your API keys. Claude Code and Codex must be authenticated in your shell environment before launching sessions.
             </div>
-            <h2 className="doc-h2">Clone and install</h2>
-            <div className="code-block"><span className="cb-lang">BASH</span><span className="c"># Clone the repository</span><br /><span className="p">$</span> git clone https://github.com/agent-cockpit/agent-cockpit.git<br /><span className="p">$</span> cd agent-cockpit<br /><br /><span className="c"># Install all workspace dependencies</span><br /><span className="p">$</span> pnpm install</div>
-            <h2 className="doc-h2">Start the development server</h2>
-            <p className="doc-p">You need two terminals — one for the daemon, one for the UI.</p>
-            <div className="code-block"><span className="cb-lang">TERMINAL 1 — DAEMON</span><span className="c"># Listens on port 3002 (Claude Code hooks) and 3001 (WebSocket)</span><br /><span className="p">$</span> pnpm --filter @cockpit/daemon dev</div>
-            <div className="code-block"><span className="cb-lang">TERMINAL 2 — UI</span><span className="c"># Vite dev server at http://localhost:5173</span><br /><span className="p">$</span> pnpm --filter @cockpit/ui dev</div>
-            <p className="doc-p">Open <code>http://localhost:5173</code> in your browser. You&apos;ll land on the office map. No agents are running yet — hit <code>+ LAUNCH</code> in the top bar to create your first session.</p>
+            <h2 className="doc-h2">Install Agent Cockpit</h2>
+            <div className="code-block"><span className="cb-lang">BASH</span><span className="c"># Run with npx — no install step required</span><br /><span className="p">$</span> npx @agentcockpit/agent-cockpit</div>
+            <p className="doc-p">That&apos;s it. Agent Cockpit starts and opens your browser automatically at <code>http://localhost:54321</code>. No separate daemon or UI terminal needed.</p>
+            <div className="callout note">
+              <div className="callout-title">DEVELOPMENT</div>
+              To run from source: <code>git clone https://github.com/agent-cockpit/agent-cockpit.git &amp;&amp; cd agent-cockpit &amp;&amp; pnpm install &amp;&amp; pnpm dev</code>
+            </div>
+            <p className="doc-p">You&apos;ll land on the office map. No agents are running yet — hit <code>+ LAUNCH</code> in the top bar to create your first session.</p>
             <div className="callout tip">
               <div className="callout-title">TIP</div>
               Press <kbd>⌘K</kbd> from anywhere in the UI to open the command palette. It&apos;s the fastest way to launch sessions, jump between agents, and trigger approvals.
@@ -127,20 +127,20 @@ export default function DocsPage() {
           <article className={`doc-page${current === "config" ? " active" : ""}`}>
             <div className="doc-breadcrumb"><a onClick={() => navigate("getting-started")}>Docs</a><span className="sep">/</span>Configuration</div>
             <h1 className="doc-h1">Configuration</h1>
-            <p className="doc-lead">Agent Cockpit uses a <code>.env</code> file in <code>ui/</code> and an optional daemon config. All settings have sensible defaults.</p>
+            <p className="doc-lead">Agent Cockpit uses environment variables for all settings. All have sensible defaults — no config file needed for the default setup.</p>
             <h2 className="doc-h2">UI environment variables</h2>
-            <p className="doc-p">Create or edit <code>ui/.env</code>:</p>
-            <div className="code-block"><span className="cb-lang">ENV</span><span className="c"># URL of the local daemon. Default: http://localhost:3000</span>{"\n"}<span className="k">VITE_DAEMON_URL</span>=<span className="s">http://localhost:3000</span>{"\n\n"}<span className="c"># WebSocket URL for live session events. Default: ws://localhost:3000</span>{"\n"}<span className="k">VITE_WS_URL</span>=<span className="s">ws://localhost:3000</span></div>
+            <p className="doc-p">Create or edit <code>packages/ui/.env</code> (source installs only):</p>
+            <div className="code-block"><span className="cb-lang">ENV</span><span className="c"># URL of the local daemon. Default: http://localhost:54321</span>{"\n"}<span className="k">VITE_DAEMON_URL</span>=<span className="s">http://localhost:54321</span>{"\n\n"}<span className="c"># WebSocket URL for live session events. Default: ws://localhost:54321</span>{"\n"}<span className="k">VITE_WS_URL</span>=<span className="s">ws://localhost:54321</span></div>
             <h2 className="doc-h2">Daemon environment variables</h2>
-            <p className="doc-p">Create or edit <code>daemon/.env</code>:</p>
-            <div className="code-block"><span className="cb-lang">ENV</span><span className="c"># Port for HTTP + WebSocket. Default: 3000</span>{"\n"}<span className="k">PORT</span>=<span className="s">3000</span>{"\n\n"}<span className="c"># Max concurrent sessions. Default: 20</span>{"\n"}<span className="k">MAX_SESSIONS</span>=<span className="s">20</span>{"\n\n"}<span className="c"># Working directory browsing root (for the BROWSE picker)</span>{"\n"}<span className="k">BROWSE_ROOT</span>=<span className="s">/Users/you</span></div>
+            <div className="code-block"><span className="cb-lang">ENV</span><span className="c"># WebSocket + HTTP port. Default: 54321</span>{"\n"}<span className="k">COCKPIT_WS_PORT</span>=<span className="s">54321</span>{"\n\n"}<span className="c"># Claude Code hook receiver port. Default: 54322</span>{"\n"}<span className="k">COCKPIT_HOOK_PORT</span>=<span className="s">54322</span>{"\n\n"}<span className="c"># Max concurrent sessions. Default: 20</span>{"\n"}<span className="k">MAX_SESSIONS</span>=<span className="s">20</span>{"\n\n"}<span className="c"># Working directory browsing root (for the BROWSE picker)</span>{"\n"}<span className="k">BROWSE_ROOT</span>=<span className="s">/Users/you</span></div>
             <h2 className="doc-h2">All config options</h2>
             <table className="doc-table">
               <thead><tr><th>KEY</th><th>DEFAULT</th><th>DESCRIPTION</th></tr></thead>
               <tbody>
-                <tr><td><code>VITE_DAEMON_URL</code></td><td><code>http://localhost:3000</code></td><td>Daemon HTTP base URL used for REST calls</td></tr>
-                <tr><td><code>VITE_WS_URL</code></td><td><code>ws://localhost:3000</code></td><td>WebSocket endpoint for event streaming</td></tr>
-                <tr><td><code>PORT</code></td><td><code>3000</code></td><td>Daemon listen port</td></tr>
+                <tr><td><code>VITE_DAEMON_URL</code></td><td><code>http://localhost:54321</code></td><td>Daemon HTTP base URL used for REST calls</td></tr>
+                <tr><td><code>VITE_WS_URL</code></td><td><code>ws://localhost:54321</code></td><td>WebSocket endpoint for event streaming</td></tr>
+                <tr><td><code>COCKPIT_WS_PORT</code></td><td><code>54321</code></td><td>Daemon WebSocket + HTTP listen port</td></tr>
+                <tr><td><code>COCKPIT_HOOK_PORT</code></td><td><code>54322</code></td><td>Claude Code hook receiver port</td></tr>
                 <tr><td><code>MAX_SESSIONS</code></td><td><code>20</code></td><td>Hard cap on simultaneous live sessions</td></tr>
                 <tr><td><code>BROWSE_ROOT</code></td><td><code>~</code></td><td>Root path for the workspace file browser</td></tr>
               </tbody>
@@ -337,7 +337,7 @@ export default function DocsPage() {
             <h1 className="doc-h1">API / Daemon reference</h1>
             <p className="doc-lead">The daemon exposes a REST API for session management and a WebSocket for real-time event streaming. All endpoints are local — nothing leaves your machine.</p>
             <h2 className="doc-h2">Base URL</h2>
-            <div className="code-block"><span className="cb-lang">ENV</span>http://localhost:3000</div>
+            <div className="code-block"><span className="cb-lang">ENV</span>http://localhost:54321</div>
             <h2 className="doc-h2">REST endpoints</h2>
             <h3 className="doc-h3">Sessions</h3>
             <table className="doc-table">
@@ -367,7 +367,7 @@ export default function DocsPage() {
               </tbody>
             </table>
             <h2 className="doc-h2">WebSocket events</h2>
-            <p className="doc-p">Connect to <code>ws://localhost:3000</code>. The server streams JSON messages:</p>
+            <p className="doc-p">Connect to <code>ws://localhost:54321</code>. The server streams JSON messages:</p>
             <div className="code-block"><span className="cb-lang">JSON</span><span className="c">{"// Session status update"}</span>{"\n"}{"{ "}<span className="s">&quot;type&quot;</span>{": "}<span className="s">&quot;session_update&quot;</span>{", "}<span className="s">&quot;sessionId&quot;</span>{": "}<span className="s">&quot;abc123&quot;</span>{", "}<span className="s">&quot;status&quot;</span>{": "}<span className="s">&quot;active&quot;</span>{" }\n\n"}<span className="c">{"// New approval request"}</span>{"\n"}{"{ "}<span className="s">&quot;type&quot;</span>{": "}<span className="s">&quot;approval_request&quot;</span>{", "}<span className="s">&quot;sessionId&quot;</span>{": "}<span className="s">&quot;abc123&quot;</span>{",\n  "}<span className="s">&quot;approvalId&quot;</span>{": "}<span className="s">&quot;req_456&quot;</span>{", "}<span className="s">&quot;risk&quot;</span>{": "}<span className="s">&quot;high&quot;</span>{", "}<span className="s">&quot;tool&quot;</span>{": "}<span className="s">&quot;bash&quot;</span>{" }"}</div>
             <div className="doc-nav-footer">
               <Prev id="shortcuts" label="Keyboard shortcuts" onClick={navigate} />
