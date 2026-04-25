@@ -82,6 +82,8 @@ nav.site-nav{
 .nav-links a{font-family:var(--f-mono);font-size:11px;color:var(--fg-2);padding:5px 10px;text-decoration:none;letter-spacing:.06em;text-transform:uppercase;border:1px solid transparent}
 .nav-links a:hover{color:var(--cyan);border-color:color-mix(in srgb,var(--cyan) 35%, transparent)}
 .nav-spacer{flex:1}
+.nav-lang{font-family:var(--f-px);font-size:7px;letter-spacing:.12em;color:var(--fg-2);text-decoration:none;padding:6px 8px;border:1px solid var(--border);transition:color .15s,border-color .15s}
+.nav-lang:hover{color:var(--cyan);border-color:color-mix(in srgb,var(--cyan) 45%, transparent)}
 .nav-gh{display:flex;align-items:center;gap:7px;font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;color:var(--fg-2);text-decoration:none;padding:6px 12px;border:1px solid var(--border);transition:color .15s,border-color .15s}
 .nav-gh:hover{color:var(--cyan);border-color:color-mix(in srgb,var(--cyan) 45%, transparent)}
 .nav-cta{font-family:var(--f-px);font-size:8px;letter-spacing:.12em;color:var(--bg-2);background:var(--cyan);padding:8px 14px;text-decoration:none;transition:background .15s;white-space:nowrap}
@@ -90,6 +92,7 @@ nav.site-nav{
   nav.site-nav{gap:12px;padding:0 20px}
   .nav-links{display:none}
   .nav-gh{display:none}
+  .nav-lang{margin-left:auto}
 }
 
 /* ── DOCS TOPBAR ── */
