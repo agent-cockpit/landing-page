@@ -22,8 +22,8 @@ const ibmPlexSans = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Agent Cockpit — The control room for your coding agents",
-  description: "Run Claude Code and Codex sessions simultaneously. Review, chat, approve — without losing the map.",
+  title: "Agent Cockpit — Run multiple coding agents from one control room",
+  description: "Install Agent Cockpit and run Claude Code + Codex sessions with unified approvals, timeline, and local-first visibility.",
   icons: {
     icon: "/assets/faces/astronaut.png",
   },

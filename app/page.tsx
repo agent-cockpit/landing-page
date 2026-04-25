@@ -8,46 +8,61 @@ export default function HomePage() {
   return (
     <>
       <GsapAnimations />
+
       <nav className="site-nav">
-        <a className="nav-mark" href="#">AGENT&nbsp;COCKPIT</a>
+        <a className="nav-mark" href="#home">AGENT&nbsp;COCKPIT</a>
         <div className="nav-links">
-          <Link href="/docs">DOCS</Link>
+          <a href="#problem">WHY</a>
           <a href="#features">FEATURES</a>
+          <a href="#how">HOW</a>
           <a href="#install">INSTALL</a>
-          <a href="#roadmap">ROADMAP</a>
+          <Link href="/docs">DOCS</Link>
         </div>
         <div className="nav-spacer" />
-        <a className="nav-gh" href="https://github.com/agent-cockpit/agent-cockpit" target="_blank" rel="noopener">
+        <a
+          className="nav-gh"
+          href="https://github.com/agent-cockpit/agent-cockpit"
+          target="_blank"
+          rel="noopener"
+        >
           <GithubIcon size={14} />
           GitHub
         </a>
-        <a className="nav-cta" href="#install">GET STARTED</a>
+        <a className="nav-cta" href="#install">RUN NOW</a>
       </nav>
 
-      <section className="hero" id="home">
+      <section className="hero hero-v2" id="home">
         <div className="hero-bg" aria-hidden="true" />
         <div className="hero-grid">
           <div>
             <div className="hero-eyebrow">
               <span className="dot" />
-              OPEN SOURCE · MIT LICENSE
+              LOCAL-FIRST · OPEN SOURCE · MULTI-AGENT
             </div>
             <h1 className="hero-h1">
-              The control room for your<br />
-              <em>coding agents.</em>
+              Running many coding agents<br />
+              shouldn&apos;t feel like <em>losing control.</em>
             </h1>
             <p className="hero-sub">
-              A local-first control room for multiple coding agents. Turn Claude Code and Codex sessions into something you can see, manage, approve, and review — with a pixel-art office on top and an operational control plane underneath.
+              Agent Cockpit turns Claude Code and Codex sessions into one live control room.
+              Approve risky actions, inspect diffs, and keep every session visible without switching tabs.
             </p>
             <div className="hero-actions">
-              <a className="btn-primary" href="#install">GET STARTED ▶</a>
-              <a className="btn-ghost" href="https://github.com/agent-cockpit/agent-cockpit" target="_blank" rel="noopener">★ Star on GitHub</a>
-              <Link className="btn-ghost" href="/docs">DOCS →</Link>
+              <a className="btn-primary" href="#install">RUN AGENT COCKPIT ▶</a>
+              <a
+                className="btn-ghost"
+                href="https://github.com/agent-cockpit/agent-cockpit"
+                target="_blank"
+                rel="noopener"
+              >
+                ★ Star on GitHub
+              </a>
+              <Link className="btn-ghost" href="/docs">READ DOCS →</Link>
             </div>
             <div className="hero-meta">
-              <span><GithubIcon size={12} style={{ opacity: 0.5 }} /> <span className="v">MIT</span></span>
-              <span>TypeScript <span className="v">React</span></span>
-              <span>v<span className="v">0.1.0-alpha</span></span>
+              <span><GithubIcon size={12} style={{ opacity: 0.5 }} /> MIT</span>
+              <span>TypeScript + React</span>
+              <span>Runs local on your machine</span>
             </div>
           </div>
 
@@ -62,21 +77,14 @@ export default function HomePage() {
                   <Image src="/assets/faces/ninja.png" alt="" width={22} height={22} style={{ imageRendering: "pixelated" }} />
                 </div>
                 <div className="hw-title">
-                  <div className="hw-name">wizardly-mclaren · agent-cockpit</div>
-                  <div className="hw-path">/Users/leo/projects/agent-cockpit</div>
+                  <div className="hw-name">wizardly-mclaren · monorepo-platform</div>
+                  <div className="hw-path">/Users/leo/projects/monorepo-platform</div>
                 </div>
                 <span className="hw-badge">CLAUDE</span>
-                <span className="hw-status"><span className="dot" />CODING</span>
-                <span style={{ fontFamily: "var(--f-mono)", fontSize: 10, color: "var(--fg-3)", marginLeft: 8 }}>T+18:42</span>
-                <div className="hw-btns">
-                  <button className="hw-btn">—</button>
-                  <button className="hw-btn">▢</button>
-                  <button className="hw-btn">×</button>
-                </div>
+                <span className="hw-status"><span className="dot" />APPROVAL NEEDED</span>
               </div>
               <div className="hw-tabs">
-                <button className="hw-tab active">Approvals <span className="tc">3</span></button>
-                <button className="hw-tab">Chat</button>
+                <button className="hw-tab active">Approvals <span className="tc">2</span></button>
                 <button className="hw-tab">Timeline</button>
                 <button className="hw-tab">Diff</button>
               </div>
@@ -85,7 +93,7 @@ export default function HomePage() {
                   <div className="acard-risk h">⬢</div>
                   <div className="acard-body">
                     <div className="acard-kind">SHELL · bash</div>
-                    <div className="acard-desc">Run <code>rm -rf ./node_modules && pnpm install</code></div>
+                    <div className="acard-desc">Run <code>rm -rf .next && npm run build</code></div>
                   </div>
                   <div className="acard-actions">
                     <button className="acard-btn ok">ALLOW A</button>
@@ -95,19 +103,8 @@ export default function HomePage() {
                 <div className="acard-mini">
                   <div className="acard-risk m">▲</div>
                   <div className="acard-body">
-                    <div className="acard-kind">EDIT · str_replace</div>
-                    <div className="acard-desc">Modify <code>MapSidebar.tsx</code> — expand chip grid</div>
-                  </div>
-                  <div className="acard-actions">
-                    <button className="acard-btn ok">ALLOW A</button>
-                    <button className="acard-btn no">DENY D</button>
-                  </div>
-                </div>
-                <div className="acard-mini">
-                  <div className="acard-risk l">●</div>
-                  <div className="acard-body">
-                    <div className="acard-kind">READ · fetch</div>
-                    <div className="acard-desc">Fetch <code>docs.anthropic.com</code> (read-only)</div>
+                    <div className="acard-kind">EDIT · patch</div>
+                    <div className="acard-desc">Modify <code>auth/session.ts</code> before merge</div>
                   </div>
                   <div className="acard-actions">
                     <button className="acard-btn ok">ALLOW A</button>
@@ -116,11 +113,11 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="hw-foot">
-                <span className="ok">● CONNECTED</span>
+                <span className="ok">● LIVE</span>
+                <span className="sep" />
+                <span>2 agents waiting</span>
                 <span className="sep" />
                 <span>24ms</span>
-                <span className="sep" />
-                <span>CTX 42%</span>
               </div>
             </div>
 
@@ -134,17 +131,26 @@ export default function HomePage() {
                   <Image src="/assets/faces/robot.png" alt="" width={22} height={22} style={{ imageRendering: "pixelated" }} />
                 </div>
                 <div className="hw-title">
-                  <div className="hw-name" style={{ fontSize: 10 }}>bouncing-lovelace · game-engine</div>
+                  <div className="hw-name" style={{ fontSize: 10 }}>bouncing-lovelace · api-gateway</div>
                 </div>
-                <span className="hw-badge" style={{ color: "var(--codex)", borderColor: "color-mix(in srgb,var(--codex) 40%,transparent)", background: "color-mix(in srgb,var(--codex) 12%,transparent)" }}>CODEX</span>
+                <span
+                  className="hw-badge"
+                  style={{
+                    color: "var(--codex)",
+                    borderColor: "color-mix(in srgb,var(--codex) 40%,transparent)",
+                    background: "color-mix(in srgb,var(--codex) 12%,transparent)",
+                  }}
+                >
+                  CODEX
+                </span>
                 <span className="hw-status" style={{ fontSize: 9 }}>
-                  <span className="dot" style={{ background: "var(--amber)", boxShadow: "0 0 5px var(--amber)" }} />TESTING
+                  <span className="dot" style={{ background: "var(--amber)", boxShadow: "0 0 5px var(--amber)" }} />RUNNING TESTS
                 </span>
               </div>
               <div className="hw-body" style={{ padding: "10px 12px" }}>
                 <div style={{ fontFamily: "var(--f-mono)", fontSize: 11, color: "var(--fg-3)", lineHeight: 1.6 }}>
-                  <span style={{ color: "var(--cyan)" }}>▶ TOOL</span>&nbsp; running pnpm test…<br />
-                  <span style={{ color: "var(--fg-3)" }}>17 passed · </span><span style={{ color: "var(--amber)" }}>2 pending</span>
+                  <span style={{ color: "var(--cyan)" }}>▶ TOOL</span> pnpm test --filter api-gateway<br />
+                  <span style={{ color: "var(--fg-2)" }}>21 passed · 1 pending</span>
                 </div>
               </div>
             </div>
@@ -152,56 +158,86 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="s trust" aria-label="Trust signals">
+        <div className="inner trust-row">
+          <div className="trust-chip">Open source and MIT licensed</div>
+          <div className="trust-chip">Claude Code + Codex support</div>
+          <div className="trust-chip">Local daemon + SQLite event history</div>
+          <a
+            className="trust-link"
+            href="https://github.com/agent-cockpit/agent-cockpit"
+            target="_blank"
+            rel="noopener"
+          >
+            <GithubIcon size={14} /> See it on GitHub
+          </a>
+        </div>
+      </section>
+
+      <section className="s" id="problem">
+        <div className="inner">
+          <div className="section-label">
+            <span className="tag">WHY THIS EXISTS</span>
+            <span className="line" />
+          </div>
+          <h2 className="lp-h2">Multi-agent coding breaks down fast without one control plane.</h2>
+          <p className="lp-lead">The problem is not model quality. It is operational visibility.</p>
+          <div className="pain-grid">
+            <article className="pain-card">
+              <span className="pain-num">01</span>
+              <h3 className="pain-title">Approval chaos</h3>
+              <p className="pain-copy">Risky shell and edit requests are scattered across terminals, so approvals become slow and inconsistent.</p>
+            </article>
+            <article className="pain-card">
+              <span className="pain-num">02</span>
+              <h3 className="pain-title">No shared timeline</h3>
+              <p className="pain-copy">When a run fails, you lose time reconstructing what happened across sessions and providers.</p>
+            </article>
+            <article className="pain-card">
+              <span className="pain-num">03</span>
+              <h3 className="pain-title">Context switching tax</h3>
+              <p className="pain-copy">Every extra window adds friction. The more agents you run, the less control you actually have.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section className="s" id="features" style={{ background: "var(--bg-2)" }}>
         <div className="inner">
           <div className="section-label">
-            <span className="tag">FEATURES</span>
+            <span className="tag">WHAT CHANGES</span>
             <span className="line" />
           </div>
-          <h2 style={{ fontFamily: "var(--f-sans)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 700, letterSpacing: "-.02em", marginBottom: 6 }}>Built for real multi-agent sessions.</h2>
-          <p style={{ fontFamily: "var(--f-mono)", fontSize: 13, color: "var(--fg-2)", maxWidth: 540 }}>Everything a solo dev needs to run 10+ agents without losing the plot.</p>
+          <h2 className="lp-h2">One cockpit for approvals, history, and execution state.</h2>
+          <p className="lp-lead">Keep every session visible, actionable, and auditable in one place.</p>
           <div className="feat-grid">
-            <div className="feat" style={{ "--feat-color": "var(--cyan)" } as React.CSSProperties}>
-              <span className="cockpit-corner cockpit-corner-tl" aria-hidden />
-              <span className="cockpit-corner cockpit-corner-br" aria-hidden />
-              <div className="feat-icon">◫</div>
-              <div className="feat-title">OFFICE MODE</div>
-              <div className="feat-body">Each active session appears as a character in a pixel-art office. Agent state reflects through animation and placement. Clicking an agent opens its full session view. Designed to feel like a game, not just a dashboard.</div>
-            </div>
             <div className="feat" style={{ "--feat-color": "var(--amber)" } as React.CSSProperties}>
               <span className="cockpit-corner cockpit-corner-tl" aria-hidden />
               <span className="cockpit-corner cockpit-corner-br" aria-hidden />
               <div className="feat-icon">⚑</div>
               <div className="feat-title">UNIFIED APPROVALS</div>
-              <div className="feat-body">Approvals from Claude Code and Codex appear in one queue. Support for approve once, deny once, and always allow within a session. Risk context helps you make faster and safer decisions.</div>
+              <div className="feat-body">Approve or deny requests from Claude Code and Codex from one queue with risk context.</div>
             </div>
-            <div className="feat" style={{ "--feat-color": "var(--green)" } as React.CSSProperties}>
+            <div className="feat" style={{ "--feat-color": "var(--cyan)" } as React.CSSProperties}>
               <span className="cockpit-corner cockpit-corner-tl" aria-hidden />
               <span className="cockpit-corner cockpit-corner-br" aria-hidden />
               <div className="feat-icon">◷</div>
-              <div className="feat-title">TIMELINE & REPLAY</div>
-              <div className="feat-body">Events in chronological order. Inspect what happened during a session — approval events, tool calls, file changes, and completion events are all visible. Useful for debugging and understanding agent behavior.</div>
+              <div className="feat-title">SESSION TIMELINE</div>
+              <div className="feat-body">Replay what happened in order: tool calls, file edits, approvals, and completion events.</div>
             </div>
             <div className="feat" style={{ "--feat-color": "var(--codex)" } as React.CSSProperties}>
               <span className="cockpit-corner cockpit-corner-tl" aria-hidden />
               <span className="cockpit-corner cockpit-corner-br" aria-hidden />
               <div className="feat-icon">◈</div>
-              <div className="feat-title">MULTI-PROVIDER</div>
-              <div className="feat-body">Claude Code and Codex side-by-side. Each session carries a provider stripe so you always know which model is doing what. Normalized event handling across providers.</div>
+              <div className="feat-title">MULTI-PROVIDER VIEW</div>
+              <div className="feat-body">Run Claude Code and Codex side-by-side with normalized event handling and clear provider state.</div>
             </div>
-            <div className="feat" style={{ "--feat-color": "var(--claude)" } as React.CSSProperties}>
+            <div className="feat" style={{ "--feat-color": "var(--green)" } as React.CSSProperties}>
               <span className="cockpit-corner cockpit-corner-tl" aria-hidden />
               <span className="cockpit-corner cockpit-corner-br" aria-hidden />
               <div className="feat-icon">⊟</div>
-              <div className="feat-title">DIFF & ARTIFACT REVIEW</div>
-              <div className="feat-body">See what files changed during a session. Inspect diffs per file, review session summaries, and audit agent output before you merge or accept it.</div>
-            </div>
-            <div className="feat" style={{ "--feat-color": "var(--cyan)" } as React.CSSProperties}>
-              <span className="cockpit-corner cockpit-corner-tl" aria-hidden />
-              <span className="cockpit-corner cockpit-corner-br" aria-hidden />
-              <div className="feat-icon">⊙</div>
-              <div className="feat-title">MEMORY PANEL</div>
-              <div className="feat-body">View and edit project memory. Keep persistent instructions and conventions in one place. Read and update knowledge that agents should remember across sessions.</div>
+              <div className="feat-title">LOCAL-FIRST AUDIT</div>
+              <div className="feat-body">Local Node daemon + SQLite history gives you a review trail without shipping project context to external services.</div>
             </div>
           </div>
         </div>
@@ -213,22 +249,22 @@ export default function HomePage() {
             <span className="tag">HOW IT WORKS</span>
             <span className="line" />
           </div>
-          <h2 style={{ fontFamily: "var(--f-sans)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 700, letterSpacing: "-.02em", marginBottom: 6 }}>Three layers, one control room.</h2>
+          <h2 className="lp-h2">Three layers. One live control room.</h2>
           <div className="how-grid">
             <div className="how-step">
               <div className="how-num">01</div>
               <div className="how-title">PROVIDER LAYER</div>
-              <div className="how-body">Claude Code and Codex emit events and approvals through their native integration surfaces. No custom patches — standard tool hooks.</div>
+              <div className="how-body">Claude Code and Codex sessions emit events and approval requests through standard hooks.</div>
             </div>
             <div className="how-step">
               <div className="how-num" style={{ borderColor: "color-mix(in srgb,var(--codex) 50%,transparent)", background: "color-mix(in srgb,var(--codex) 10%,var(--bg-2))", color: "var(--codex)", boxShadow: "0 0 20px color-mix(in srgb,var(--codex) 20%,transparent)" }}>02</div>
               <div className="how-title">DAEMON LAYER</div>
-              <div className="how-body">A local Node daemon normalizes provider events, stores them in SQLite, and broadcasts live updates over WebSocket. Zero cloud, fully local.</div>
+              <div className="how-body">A local Node daemon normalizes events, stores them in SQLite, and broadcasts state over WebSocket.</div>
             </div>
             <div className="how-step">
               <div className="how-num" style={{ borderColor: "color-mix(in srgb,var(--green) 50%,transparent)", background: "color-mix(in srgb,var(--green) 10%,var(--bg-2))", color: "var(--green)", boxShadow: "0 0 20px color-mix(in srgb,var(--green) 20%,transparent)" }}>03</div>
               <div className="how-title">BROWSER UI</div>
-              <div className="how-body">The React interface consumes live events and updates the office map, operational panels, and session detail views in real time. Approve, inspect, or redirect any session.</div>
+              <div className="how-body">The React UI updates in real time so you can approve, inspect, and steer sessions without losing context.</div>
             </div>
           </div>
         </div>
@@ -240,7 +276,8 @@ export default function HomePage() {
             <span className="tag">QUICK START</span>
             <span className="line" />
           </div>
-          <h2 style={{ fontFamily: "var(--f-sans)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 700, letterSpacing: "-.02em", marginBottom: 6 }}>From zero to running.</h2>
+          <h2 className="lp-h2">From zero to running in a minute.</h2>
+          <p className="lp-lead">Install your agent CLIs once, then launch the cockpit locally.</p>
           <div className="install-box">
             <span className="cockpit-corner cockpit-corner-tl" aria-hidden />
             <span className="cockpit-corner cockpit-corner-tr" aria-hidden />
@@ -280,6 +317,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </div>
+
               <div className="install-group">
                 <span className="install-label">1 · RUN</span>
                 <div className="code-line">
@@ -288,57 +326,45 @@ export default function HomePage() {
                   <CopyButton text="npx @agentcockpit/agent-cockpit" />
                 </div>
               </div>
+
               <p className="install-note">
-                Opens automatically at <a href="http://localhost:54321">http://localhost:54321</a>. Requires <a href="https://nodejs.org">Node 22+</a>.<br />
+                Opens at <a href="http://localhost:54321">http://localhost:54321</a>. Requires <a href="https://nodejs.org">Node 22+</a>.
+                <br />
                 <Link href="/docs">→ Full getting started guide</Link>
               </p>
-            </div>
-          </div>
-          <div className="prov-grid" style={{ marginTop: 40 }}>
-            <div className="prov-card" data-prov="claude">
-              <span className="cockpit-corner cockpit-corner-tl" aria-hidden />
-              <span className="cockpit-corner cockpit-corner-br" aria-hidden />
-              <span className="prov-badge">CLAUDE</span>
-              <div className="prov-title">Claude Code</div>
-              <div className="prov-body">Anthropic&apos;s long-context, tool-using coding agent. Best for large refactors, multi-file edits, and anything requiring deep codebase understanding.</div>
-            </div>
-            <div className="prov-card" data-prov="codex">
-              <span className="cockpit-corner cockpit-corner-tl" aria-hidden />
-              <span className="cockpit-corner cockpit-corner-br" aria-hidden />
-              <span className="prov-badge">CODEX</span>
-              <div className="prov-title">OpenAI Codex</div>
-              <div className="prov-body">Fast, patch-focused agent. Strong for targeted fixes, test generation, and quick surgical edits where speed matters over context window.</div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="s" id="roadmap">
-        <div className="inner">
-          <div className="section-label">
-            <span className="tag">ROADMAP</span>
-            <span className="line" />
+      <section className="s final-cta" id="cta">
+        <div className="inner final-cta-box">
+          <div>
+            <p className="final-cta-kicker">READY TO RUN MULTI-AGENT WORK WITHOUT LOSING THE PLOT?</p>
+            <h2 className="final-cta-title">Install Agent Cockpit and run your sessions from one command center.</h2>
           </div>
-          <h2 style={{ fontFamily: "var(--f-sans)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 700, letterSpacing: "-.02em", marginBottom: 6 }}>Where this is going.</h2>
-          <div className="roadmap">
-            <div className="rm-row"><span className="rm-phase" style={{ fontFamily: "var(--f-px)", fontSize: 8 }}>SHIPPED</span><span className="rm-item"><b>Office Mode:</b> pixel-art office, agent characters, session map, spatial navigation</span><span className="rm-badge done">DONE</span></div>
-            <div className="rm-row"><span className="rm-phase" style={{ fontFamily: "var(--f-px)", fontSize: 8 }}>SHIPPED</span><span className="rm-item"><b>Ops Mode:</b> session list, approval inbox, timeline, diff viewer, memory panel, history</span><span className="rm-badge done">DONE</span></div>
-            <div className="rm-row"><span className="rm-phase" style={{ fontFamily: "var(--f-px)", fontSize: 8 }}>SHIPPED</span><span className="rm-item"><b>Unified approvals</b> — approve once, deny once, always allow; risk context per request</span><span className="rm-badge done">DONE</span></div>
-            <div className="rm-row"><span className="rm-phase" style={{ fontFamily: "var(--f-px)", fontSize: 8 }}>IN PROGRESS</span><span className="rm-item"><b>Game polish</b> — more natural movement, state-driven NPC behavior, ambient audio</span><span className="rm-badge wip">IN PROGRESS</span></div>
-            <div className="rm-row"><span className="rm-phase" style={{ fontFamily: "var(--f-px)", fontSize: 8 }}>PLANNED</span><span className="rm-item"><b>Save & load</b> support, richer notifications, stronger search across session history</span><span className="rm-badge next">PLANNED</span></div>
-            <div className="rm-row"><span className="rm-phase" style={{ fontFamily: "var(--f-px)", fontSize: 8 }}>PLANNED</span><span className="rm-item">Additional providers and session types beyond Claude Code and Codex</span><span className="rm-badge next">PLANNED</span></div>
+          <div className="final-cta-actions">
+            <a className="btn-primary" href="#install">RUN AGENT COCKPIT ▶</a>
+            <a
+              className="btn-ghost"
+              href="https://github.com/agent-cockpit/agent-cockpit"
+              target="_blank"
+              rel="noopener"
+            >
+              ★ Star on GitHub
+            </a>
           </div>
         </div>
       </section>
 
       <footer className="site-footer">
-        <div className="footer-mark">AGENT <span>COCKPIT</span> · MIT LICENSE · 2026</div>
+        <div className="footer-mark">AGENT <span>COCKPIT</span> · OPEN SOURCE · 2026</div>
         <div className="footer-links">
           <a href="https://github.com/agent-cockpit/agent-cockpit" target="_blank" rel="noopener">GitHub</a>
           <Link href="/docs">Docs</Link>
-          <a href="#roadmap">Roadmap</a>
+          <a href="#install">Install</a>
+          <a href="#features">Features</a>
           <a href="https://github.com/agent-cockpit/agent-cockpit/issues" target="_blank" rel="noopener">Issues</a>
-          <a href="https://github.com/agent-cockpit/agent-cockpit/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contributing</a>
         </div>
       </footer>
     </>
