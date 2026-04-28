@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Press_Start_2P, IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const pressStart2P = Press_Start_2P({
@@ -35,7 +36,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       lang="en"
       className={`${pressStart2P.variable} ${ibmPlexMono.variable} ${ibmPlexSans.variable} h-full`}
     >
-      <body className="min-h-full">{children}</body>
+      <body className="min-h-full">
+        {children}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-TDTPZHXX0C" strategy="afterInteractive" />
+        <Script id="ga4-init" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TDTPZHXX0C');
+        `}</Script>
+      </body>
     </html>
   );
 }
