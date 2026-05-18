@@ -1,5 +1,5 @@
 import LandingPage from "@/app/components/LandingPage";
 
 export default function HomePage() {
-  return <LandingPage locale="en" />;
+  return <LandingPage />;
 }

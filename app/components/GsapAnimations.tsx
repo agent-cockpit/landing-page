@@ -11,164 +11,76 @@ export default function GsapAnimations() {
       gsap.registerPlugin(ScrollTrigger);
 
       ctx = gsap.context(() => {
+        // Stagger feature cards in on scroll
         gsap.fromTo(
-          ".hero-visual",
-          { opacity: 0, x: 52, scale: 0.96 },
-          { opacity: 1, x: 0, scale: 1, duration: 1.1, delay: 0.4, ease: "power3.out" }
-        );
-
-        gsap.fromTo(
-          ".hw2",
-          { opacity: 0, y: 28 },
+          ".feat-card",
+          { opacity: 0, y: 32 },
           {
-            opacity: 1,
-            y: 0,
-            duration: 0.8,
-            delay: 1.1,
-            ease: "power3.out",
-            onComplete() {
-              gsap.to(".hw2", {
-                y: -8,
-                duration: 2.6,
-                repeat: -1,
-                yoyo: true,
-                ease: "sine.inOut",
-              });
-            },
-          }
-        );
-
-        const mm = gsap.matchMedia();
-        mm.add("(min-width: 860px)", () => {
-          gsap.to(".hero-visual", {
-            y: 64,
-            ease: "none",
-            scrollTrigger: {
-              trigger: ".hero",
-              start: "top top",
-              end: "bottom top",
-              scrub: 0.8,
-            },
-          });
-          gsap.to(".hero-bg", {
-            y: 42,
-            ease: "none",
-            scrollTrigger: {
-              trigger: ".hero",
-              start: "top top",
-              end: "bottom top",
-              scrub: 1.6,
-            },
-          });
-        });
-
-        gsap.utils.toArray<Element>(".section-label, .lp-h2, .lp-lead").forEach((el) => {
-          gsap.fromTo(
-            el,
-            { opacity: 0, y: 20 },
-            {
-              opacity: 1,
-              y: 0,
-              duration: 0.55,
-              ease: "power3.out",
-              scrollTrigger: { trigger: el, start: "top 88%" },
-            }
-          );
-        });
-
-        gsap.fromTo(
-          ".trust-chip",
-          { opacity: 0, y: 14 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.45,
-            stagger: 0.08,
-            ease: "power2.out",
-            scrollTrigger: { trigger: ".trust-row", start: "top 90%" },
-          }
-        );
-
-        gsap.fromTo(
-          ".pain-card",
-          { opacity: 0, y: 24 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.6,
-            stagger: 0.1,
-            ease: "power3.out",
-            scrollTrigger: { trigger: ".pain-grid", start: "top 84%" },
-          }
-        );
-
-        gsap.fromTo(
-          ".feat",
-          { opacity: 0, y: 34 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.65,
-            stagger: { amount: 0.4 },
+            opacity: 1, y: 0, duration: 0.6, stagger: { amount: 0.5 },
             ease: "power3.out",
             scrollTrigger: { trigger: ".feat-grid", start: "top 84%" },
           }
         );
 
+        // Demo frame
         gsap.fromTo(
-          ".how-num",
-          { scale: 0.35, opacity: 0 },
+          ".demo-frame",
+          { opacity: 0, y: 28, scale: 0.98 },
           {
-            scale: 1,
-            opacity: 1,
-            duration: 0.7,
-            stagger: 0.18,
-            ease: "back.out(2)",
+            opacity: 1, y: 0, scale: 1, duration: 0.7,
+            ease: "power3.out",
+            scrollTrigger: { trigger: ".demo-frame", start: "top 84%" },
+          }
+        );
+
+        // Sprite cells stagger
+        gsap.fromTo(
+          ".sprite-cell",
+          { opacity: 0, y: 20 },
+          {
+            opacity: 1, y: 0, duration: 0.5, stagger: 0.07,
+            ease: "power2.out",
+            scrollTrigger: { trigger: ".sprite-strip", start: "top 86%" },
+          }
+        );
+
+        // How steps
+        gsap.fromTo(
+          ".how-step",
+          { opacity: 0, y: 24 },
+          {
+            opacity: 1, y: 0, duration: 0.55, stagger: 0.15,
+            ease: "power3.out",
             scrollTrigger: { trigger: ".how-grid", start: "top 82%" },
           }
         );
 
+        // Install box
         gsap.fromTo(
           ".install-box",
-          { opacity: 0, y: 34, scale: 0.98 },
+          { opacity: 0, y: 30, scale: 0.98 },
           {
-            opacity: 1,
-            y: 0,
-            scale: 1,
-            duration: 0.75,
+            opacity: 1, y: 0, scale: 1, duration: 0.7,
             ease: "power3.out",
             scrollTrigger: { trigger: ".install-box", start: "top 84%" },
           }
         );
 
-        gsap.fromTo(
-          ".final-cta-box",
-          { opacity: 0, y: 24 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.6,
-            ease: "power3.out",
-            scrollTrigger: { trigger: ".final-cta-box", start: "top 86%" },
-          }
-        );
-
-        gsap.fromTo(
-          "footer.site-footer",
-          { opacity: 0 },
-          {
-            opacity: 1,
-            duration: 0.55,
-            ease: "power2.out",
-            scrollTrigger: { trigger: "footer.site-footer", start: "top 95%" },
-          }
-        );
+        // Section headlines
+        gsap.utils.toArray<Element>(".section-eyebrow, .section-headline").forEach((el) => {
+          gsap.fromTo(
+            el,
+            { opacity: 0, y: 18 },
+            {
+              opacity: 1, y: 0, duration: 0.5, ease: "power3.out",
+              scrollTrigger: { trigger: el, start: "top 88%" },
+            }
+          );
+        });
       });
     })();
 
-    return () => {
-      ctx?.revert();
-    };
+    return () => { ctx?.revert() };
   }, []);
 
   return null;
